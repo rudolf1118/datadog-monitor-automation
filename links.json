@@ -1,0 +1,722 @@
+[
+  {
+    "orgKey": "default-org",
+    "connectorName": "unknown-service",
+    "link": "https://app.datadoghq.com/logs?query=&cols=host%2Cservice&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=desc&viz=stream&from_ts=1755242399843&to_ts=1755243299843&live=true"
+  },
+  {
+    "orgKey": "E & J Sales and Markeing",
+    "connectorName": "connector-erp-brightpearl",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20functionname%3A%2Amaster%2A%20service%3Aconnector-erp-brightpearl%20-%28%2Atimeout%20%2Amain%2A%29%20-%40module%3A%28p17-api%20OR%20vendor-api%29%20-integration%5C%3Ainit%2A%20-locations%2A%20-%28%40error.status%3A%3E%3D500%20%28integration%2A%20OR%20%22shipments%3Aapply%3Aorder%3Aresolve%3Afailed%22%29%29%20-%28%22orders%3Aapply%3Ali%3Aproduct%3Aunresolved%22%20AND%20%40orgName%3A%22E%20%26%20J%20Sales%20and%20Markeing%22%29%20-UNCOMMENT_ASAP%20-%28%28%22inventory%3Aapply%3Aprices%3Amissed%22%20OR%20%22fulfillments%3Aapply%3Acontact%3Amissed%22%29%20%40orgName%3A%22Monica%20%26%20Andy%22%29&agg_m=count&agg_m_source=base&agg_t=count&clustering_pattern_field_path=message&cols=%40orgName%2C%40extOrderId%2C%40sku%2C%40error.status%2C%40error.failure.code%2C%40error.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&view=spans&viz=stream&from_ts=1750100840381&to_ts=1750187240381&live=true"
+  },
+  {
+    "orgKey": "default-org",
+    "connectorName": "connector-edi-orderful",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20functionname%3A%2Amaster%2A%20service%3Aconnector-edi-orderful%20-%28%2Atimeout%20%2Amain%2A%29%20-%40module%3A%28p17-api%20OR%20vendor-api%29%20-integration%5C%3Ainit%2A%20-exception%2A%20-%28%22inventory%3Aapply%3Alocation%3Afetch%3Afailed%22%20AND%20%22Not%20authorized%22%29%20-%28%40error%3Afield%5C%20transactionSets%2A%20AND%20%28inventory%2A%20OR%20%2Aconvert%2A%29%29%20-UNCOMMENT_ASAP%20-%40error.details%3A%28%28%2AmarksAndNumbers%2A%20OR%20%2AassignedIdentification%2A%20OR%20%2AproductItemDescription%2A%29%20AND%20%2Ais%5C%20mandatory%2A%29&agg_m=count&agg_m_source=base&agg_t=count&clustering_pattern_field_path=message&cols=%40orgName%2C%40extOrderId%2Csku%2Cerror.status%2C%40error.failure.code%2Cerror.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&viz=stream&from_ts=1753688637444&to_ts=1753775037444&live=true"
+  },
+  {
+    "orgKey": "default-org",
+    "connectorName": "connector-ecomm-tradegecko",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20env%3Amaster%20service%3Aconnector-ecomm-tradegecko%20-%22timed%20out%22%20-ETIMEDOUT%20-ECONNREFUSED%20-ECONNRESET&cols=%40orgName%2C%40extOrderId%2C%40fulfillmentId%2C%40error.failure.code&fromUser=true&index=&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&viz=stream&from_ts=1666344979222&to_ts=1666949779222&live=true"
+  },
+  {
+    "orgKey": "default-org",
+    "connectorName": "connector-ecomm-square",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20functionname%3A%2Amaster%2A%20service%3Aconnector-ecomm-square%20-%2Atimeout%20-%40module%3A%28vendor-api%20OR%20p17-api%29%20-integration%5C%3Ainit%2A%20-%40orgName%3AT20221012%20-%40error.failure.errors%3Astatus%5C%3A%5C%20invalid%5C%20state-transition%2A%20-%40error.details%3A%28%2AInvalid%5C%20Object%5C%20with%5C%20Id%2A%20OR%20%2AXExpected%5C%20an%5C%20integer%5C%20value%2A%20OR%20%2AXVariation%5C%20with%5C%20FIXED_PRICING%5C%20pricing%5C%20type%2A%20OR%20%2AExpected%5C%20ItemVariation%5C%20to%5C%20have%2AItem%5C%20Option%2A%20OR%20%2AOrder%5C%20with%5C%20id%2Ahas%5C%20status%5C%20%60COMPLETED%60%2A%29%20-%22XFailed%20to%20update%20item%20option%22%20-UNCOMMENT_ASAP%20-%22Get%20product%20by%20SKU%3A%20multiple%20results%22%20-%22Multiple%20results%20found%22&agg_m=count&agg_m_source=base&agg_t=count&clustering_pattern_field_path=message&cols=%40orgName%2C%40extOrderId%2Csku%2C%40error.status%2C%40error.details%2Cerror.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&viz=stream&from_ts=1747900101197&to_ts=1747986501197&live=true"
+  },
+  {
+    "orgKey": "Wine Racks America",
+    "connectorName": "connector-ecomm-houzz",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20env%3Amaster%20service%3Aconnector-ecomm-houzz%20-%28%2Atimeout%20%2Amain%2A%29%20-%40module%3A%28p17-api%20OR%20vendor-api%29%20-integration%5C%3Ainit%2A%20-%28%22inventory%3Aapply%3Afailed%22%20AND%20%40error.Errors.LongMessage%3A%22Cannot%20find%20product.%20Please%20provide%20a%20valid%20SKU.%22%29%20-UNCOMMENT_THIS_ASAP%20-%28%40error.message.Errors.LongMessage%3A%22Please%20provide%20a%20valid%20token.%22%20AND%20%40orgName%3A%22Wine%20Racks%20America%22%29&agg_m=count&agg_m_source=base&agg_t=count&cols=%40orgName%2C%40extOrderId%2C%40sku%2C%40error.failure.code%2Cerror.Errors%5B0%5D.LongMessage%2C%40error.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&viz=stream&from_ts=1734505920036&to_ts=1734544800036&live=true"
+  },
+  {
+    "orgKey": "default-org",
+    "connectorName": "connector-ecomm-fabric",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20env%3Amaster%20service%3Aconnector-ecomm-fabric%20-%22Task%20timed%20out%22%20&additional_filters=%5B%7B%7D%5D&cols=%40orgName%2C%40extOrderId%2C%40orderId%2Cerror.message&fromUser=true&index=&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&viz=stream&from_ts=1699175395831&to_ts=1699261795831&live=true"
+  },
+  {
+    "orgKey": "default-org",
+    "connectorName": "connector-3pl-northstar",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20env%3Amaster%20service%3Aconnector-3pl-northstar%20-%22integration%3Amain%3Atimeout%22%20-%22connector%3Amain%3Atimeout%22%20-%22products%3Amain%3Atimeout%22%20-%22Task%20timed%20out%22%20-%40module%3A%28vendor-api%20OR%20p17-api%29%20-integration%5C%3Ainit%2A&agg_m=count&agg_m_source=base&agg_t=count&cols=%40orgName%2C%40extOrderId%2C%40extShipmentId%2Csku%2C%40error.status%2Cerror.details%2Cerror.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&view=spans&viz=stream&from_ts=1726838650771&to_ts=1726925050771&live=true"
+  },
+  {
+    "orgKey": "default-org",
+    "connectorName": "connector-ecomm-lightspeed",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20functionname%3A%2Amaster%2A%20service%3Aconnector-ecomm-lightspeed%20-%28%2Atimeout%20%2Amain%2A%29%20-%22timed%20out%22%20-%40module%3Avendor-api%20-integration%5C%3Ainit%2A%20-%28%40error.failure.message%3A%22Duplicate%20key%20error%22%20products%2A%29%20-inventory%5C%3Apoll%5C%3Anext&agg_m=count&agg_m_source=base&agg_t=count&cols=%40orgName%2C%40extOrderId%2C%40error.status%2C%40error.payload.message%2C%40error.failure.code&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&viz=stream&from_ts=1742978656201&to_ts=1743065056201&live=true"
+  },
+  {
+    "orgKey": "default-org",
+    "connectorName": "connector-erp-odoo",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20functionname%3A%2Amaster%2A%20service%3Aconnector-erp-odoo%20-%28%2Atimeout%20%2Amain%2A%29%20-%22timed%20out%22%20-integration%5C%3Ainit%2A%20-%28%22fulfillments%3Aapply%3Adelivery%3Avalidate%3Afailed%22%20%22You%20cannot%20validate%20a%20transfer%20if%20no%20quantities%20are%20reserved%22%29&agg_m=count&agg_m_source=base&agg_t=count&cols=%40orgName%2C%40extOrderId%2Csku%2C%40error.faultString%2Cerror.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&viz=stream&from_ts=1749627993098&to_ts=1749714393098&live=true"
+  },
+  {
+    "orgKey": "default-org",
+    "connectorName": "connector-ecomm-squarespace",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20functionname%3A%2Amaster%2A%20service%3Aconnector-ecomm-squarespace%20-%2Atimeout%20-%40module%3A%28p17-api%20OR%20vendor-api%29%20-integration%5C%3Ainit%2A%20-UNCOMMENT_ASAP%20-%28%40orgName%3ASessions%20integration%2A%29&agg_m=count&agg_m_source=base&agg_q=%40orgName&agg_q_source=base&agg_t=count&clustering_pattern_field_path=message&cols=%40orgName%2C%40extOrderId%2C%40sku%2C%40error.status%2C%40error.parsed.message%2Cerror.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&replay_tab=most_interacted_with&storage=hot&stream_sort=time%2Cdesc&top_n=10&top_o=top&view=spans&viz=stream&x_missing=true&from_ts=1752086155804&to_ts=1752172555804&live=true"
+  },
+  {
+    "orgKey": "default-org",
+    "connectorName": "connector-ecomm-wayfair",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20functionname%3A%2Amaster%2A%20service%3Aconnector-ecomm-wayfair%20-%28%2Atimeout%20%2Amain%2A%29%20-%40module%3A%28vendor-api%20OR%20p17-api%29%20-integration%5C%3Ainit%2A%20-%28locations%2A%20%2Apoll%2A%20%2Afailed%29%20-%40error.response.errors.message%3A%28%22Cannot%20query%20field%20%5C%22identity%5C%22%20on%20type%20%5C%22Query%5C%22.%22%20OR%20%22Cannot%20query%20field%20%5C%22productCatalogs%5C%22%20on%20type%20%5C%22Query%5C%22.%22%29%20-%28%40error.failure.code%3A409%20AND%20products%2A%29&agg_m=count&agg_m_source=base&agg_t=count&cols=%40orgName%2C%40extOrderId%2Csku%2Cerror.code%2C%40error.response.status%2Cerror.failure.code%2Cerror.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&view=spans&viz=stream&from_ts=1748289338237&to_ts=1748375738237&live=true"
+  },
+  {
+    "orgKey": "default-org",
+    "connectorName": "connector-ecomm-faire",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20functionname%3A%2Amaster%2A%20service%3Aconnector-ecomm-faire%20-%28%2Atimeout%20%2Amain%2A%29%20-%40module%3A%28vendor-api%20OR%20p17-api%29%20-integration%5C%3Ainit%2A%20-%28%40error.failure.message%3A%22Duplicate%20key%20error%22%20products%2A%29%20-%40Xerror.failure.orders.errors%3AlineItems%2Asku%2Arequired%2A%20-%40error.details.message%3A%22Cannot%20edit%20SWF%20shipments%22&agg_m=count&agg_m_source=base&agg_t=count&clustering_pattern_field_path=message&cols=%40orgName%2C%40extOrderId%2Csku%2C%40error.status%2C%40error.failure.code%2C%40error.details.message%2Cerror.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&view=spans&viz=stream&from_ts=1753947754923&to_ts=1754034154923&live=true"
+  },
+  {
+    "orgKey": "default-org",
+    "connectorName": "connector-3pl-shipmonk",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20functionname%3A%2Amaster%2A%20service%3Aconnector-3pl-shipmonk%20-%28%2Atimeout%20%2Amain%2A%29%20-%40module%3A%28p17-api%20OR%20vendor-api%29%20-integration%5C%3Ainit%2A%20-%40error.details.message%3A%2AThere%27s%5C%20already%5C%20an%5C%20existing%5C%20product%2A%20-%40error.details.message%3A%22Value%20of%20%60barcodes.0%60%20should%20not%20be%20empty%22%20-%40error.details.message%3A%2AThe%5C%20barcode%5C%20%2A%5C%20is%5C%20already%5C%20assigned%2A%20-%40error.details.message%3A%22Value%20of%20%60countryOfOrigin%60%20is%20missing%22&agg_m=count&agg_m_source=base&agg_t=count&clustering_pattern_field_path=message&cols=%40orgName%2CextOrderId%2Csku%2C%40error.status%2C%40error.details.message%2Cerror.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&view=spans&viz=stream&from_ts=1752605978717&to_ts=1752692378717&live=true"
+  },
+  {
+    "orgKey": "default-org",
+    "connectorName": "connector-ecomm-feedonomics",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20env%3Amaster%20service%3Aconnector-ecomm-feedonomics%20-%22timed%20out%22%20-%22Invalid%20credentials%22%20-%40error.failure.code%3A500%20-%40error.status%3A503&cols=%40orgName%2C%40error.status%2C%40product.bar_codes%2C%40product.product_name%2C%40err.status&fromUser=true&index=&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&viz=stream&from_ts=1665824649324&to_ts=1666083849324&live=true"
+  },
+  {
+    "orgKey": "default-org",
+    "connectorName": "connector-ecomm-feedonomics",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20env%3Amaster%20service%3Aconnector-ecomm-feedonomics%20-%22timed%20out%22%20-%22Invalid%20credentials%22%20-%40error.failure.code%3A500%20-%40error.status%3A503&agg_m=count&agg_m_source=base&agg_t=count&cols=%40orgName%2C%40error.status%2C%40product.bar_codes%2C%40product.product_name%2C%40err.status&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&viz=stream&from_ts=1665824649324&to_ts=1666083849324&live=true"
+  },
+  {
+    "orgKey": "default-org",
+    "connectorName": "connector-erp-katana",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20functionname%3A%2Amaster%2A%20service%3Aconnector-erp-katana%20-%28%2Atimeout%20%2Amain%2A%29%20-%40module%3A%28p17-api%20OR%20vendor-api%29%20-integration%5C%3Ainit%2A%20-%28%22Duplicate%20key%20error%22%20AND%20products%2A%29%20-%22Xshipments%3Aapply%3Avariants%3Amissing%22%20-%22orders%3Aapply%3Avariants%3Amissing%22&agg_m=count&agg_m_source=base&agg_t=count&cols=%40orgName%2C%40extOrderId%2C%40status%2Csku%2C%40error.status%2C%40error.failure.code%2Cerror.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&viz=stream&from_ts=1750017696155&to_ts=1750104096155&live=true"
+  },
+  {
+    "orgKey": "CIRRO SANDBOX",
+    "connectorName": "connector-ecomm-xcart",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20functionname%3A%2Amaster%2A%20service%3Aconnector-ecomm-xcart%20-%28%2Atimeout%20%2Amain%2A%29%20-%22timed%20out%22%20-%40module%3A%28p17-api%20OR%20vendor-api%29%20-integration%5C%3Ainit%2A%20-UNCOMMENT_ASAP%20-%28%2A%3Ahttps%5C%3A%2F%2Ftest-oms-elogweb.eminxing.com%20%40orgName%3A%22CIRRO%20SANDBOX%22%29&agg_m=count&agg_m_source=base&agg_t=count&cols=%40orgName%2CextOrderId%2Csku%2Cerror.status%2C%40error.text%2Cerror.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&viz=stream&from_ts=1746690300934&to_ts=1746776700934&live=true"
+  },
+  {
+    "orgKey": "default-org",
+    "connectorName": "connector-3pl-veracore",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20functionname%3A%2Amaster%2A%20service%3Aconnector-3pl-veracore%20-%28%2Atimeout%20%2Amain%2A%29%20-%40module%3A%28p17-api%20OR%20vendor-api%29%20-integration%5C%3Ainit%2A&agg_m=count&agg_m_source=base&agg_t=count&clustering_pattern_field_path=message&cols=%40orgName%2CextOrderId%2Csku%2C%40error.name%2C%40error.processedMessage%2Cerror.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&view=spans&viz=stream&from_ts=1750017878051&to_ts=1750104278051&live=true"
+  },
+  {
+    "orgKey": "Thursday Boots (Production)",
+    "connectorName": "connector-3pl-channelape",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20functionname%3A%2Amaster%2A%20service%3Aconnector-3pl-channelape%20-%28%2Atimeout%20%2Amain%2A%29%20-%22timed%20out%22%20-%40module%3A%28p17-api%20OR%20vendor-api%29%20-integration%5C%3Ainit%2A%20-UNCOMMENT_THIS_ASAP%20-%28%2Ascan%2A%20%40error.status%3A429%29%20-%28%22shipments%3Aapply%3Astatus%3Afailed%22%20%22Duplicate%20key%20error%22%20%40orgName%3A%22Thursday%20Boots%20%28Production%29%22%29&agg_m=count&agg_m_source=base&agg_t=count&clustering_pattern_field_path=message&cols=%40orgName%2C%40extOrderId%2Csku%2C%40error.status%2C%40error.text&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&viz=stream&from_ts=1754757823661&to_ts=1754844223661&live=true"
+  },
+  {
+    "orgKey": "default-org",
+    "connectorName": "connector-erp-dear",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20functionname%3A%2Amaster%2A%20service%3Aconnector-erp-dear%20-%2Atimeout%20-%40module%3A%28p17-api%20OR%20vendor-api%29%20-integration%5C%3Ainit%2A%20-locations%2A%20-%28%28%40error.code%3A%28ECONNRESET%20OR%20ETIMEDOUT%29%20OR%20%22502%20Bad%20Gateway%22%29%20AND%20%28integration%2A%20OR%20%22products%3Apoll%3Afailed%22%20OR%20%22products%3Alist%3Afailed%22%20OR%20%22orders%3Apoll%3Afailed%22%20OR%20%22orders%3Alist%3Afailed%22%29%29%20-%28%28%40error.failure.message%3A%22Duplicate%20key%20error%22%20OR%20%40error.failure.errors%3A%2Ais%5C%20bundle%5C%20product%2A%20OR%20%40error.failure.products.errors%3A%2Ais%5C%20bundle%5C%20product%2A%29%20AND%20products%2A%29%20-UNCOMMENT_ASAP%20-%40error.parsed.Exception%3AInsufficient%5C%20%2A%5C%20quantity%2A%20-%40error.parsed.Exception%3AAccount%5C%20code%5C%20%2A%5C%20not%5C%20found%2A%20-%40error.parsed.Exception%3ANo%5C%20product%5C%20with%5C%20ID%2A%20-%40error.parsed.Exception%3AProduct%5C%20%2A%5C%20was%5C%20not%5C%20found%2A%20-%40error.parsed.Exception%3ASale%5C%20task%5C%20has%5C%20been%5C%20consolidated%2A%20-%22BatchSN%20attribure%20is%20required%22%20-%22Sale%20with%20specified%20ID%20not%20found%22%20-%22Customer%20with%20specified%20%27Name%27%20not%20found%22&agg_m=count&agg_m_source=base&agg_t=count&cols=%40orgName%2C%40extOrderId%2C%40sku%2C%40error.status%2C%40error.parsed.%5B0%5DException%2Cerror.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&view=spans&viz=stream&from_ts=1749023080195&to_ts=1749109480195&live=true"
+  },
+  {
+    "orgKey": "Continuance LLC",
+    "connectorName": "connector-3pl-shipbob",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20functionname%3A%2Amaster%2A%20service%3Aconnector-3pl-shipbob%20-%28%2Atimeout%20%2Amain%2A%29%20-%40module%3A%28p17-api%20OR%20vendor-api%29%20-integration%5C%3Ainit%2A%20-%28%28%40error.status%3A%3E%3D500%20OR%20%22request%20to%20https%22%29%20AND%20locations%2A%29%20-%28%22Command%20aggregate%20failed%22%20AND%20%28%22Connection%20reset%22%20OR%20%22Connection%20closed%22%20OR%20%22Error%20connecting%22%29%20AND%20products%2A%29%20-%28%28%40error.status%3A%3E%3D500%20OR%20%22Products%20resolve%20failed%22%29%20AND%20%28integration%2A%20OR%20%22shipments%3Aapply%3Afailed%22%20OR%20%22shipments%3Aapply%3Aresolve%3Afailed%22%20OR%20%22shipments%3Aapply%3Aproducts%3Aresolve%3Afailed%22%29%29%20-packaging_requirement_id%20-%22fulfillments%3Apoll%3Afailed%22%20-UNCOMMENT_ASAP%20-%28%22fulfillments%3Apoll%3Ashipment%3Aexception%3Aunknown%3Amultiple%22%20%40orgName%3A%22Continuance%20LLC%22%29%20-%22LocationId%3A%2015%20not%20allowed%20or%20does%20not%20exist%22%20-%22The%20ShippingMethod%20field%20is%20required%22%20-%2Avariants.%2A%5C%20cannot%5C%20be%5C%20restock%5C%20when%5C%20variant%5C%20is%5C%20a%5C%20lot%5C%20product%2A&agg_m=count&agg_m_source=base&agg_t=count&clustering_pattern_field_path=message&cols=%40orgName%2C%40extOrderId%2Csku%2C%40error.status%2Cerror.parsed%2Cerror.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&view=spans&viz=stream&from_ts=1752478977706&to_ts=1752565377706&live=true"
+  },
+  {
+    "orgKey": "default-org",
+    "connectorName": "connector-3pl-shipstation",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20functionname%3A%2Amaster%2A%20service%3Aconnector-3pl-shipstation%20-%28%2Atimeout%20%2Amain%2A%29%20-location%2A%20-%40module%3A%28p17-api%20OR%20vendor-api%29%20-integration%5C%3Ainit%2A%20-%28%22shipments%3Aapply%3Afailed%22%20AND%20%28%40shipment.shipTo.name%3A%22%22%20OR%20%40shipment.billTo.name%3A%22%22%29%29%20-%40error.status%3A429%20-%40error.status%3A%3E%3D500%20-%40mode%3Ascan%20-%40error.details.ModelState.apiOrder.billTo.country%3A%22Please%20use%20a%202%20character%20country%20code%22%20-%40error.details.possibleReasons%3A%28%22carrierCode%20is%20empty%22%20OR%20%22billTo%2FshipTo%20street1%20is%20empty%22%29&agg_m=count&agg_m_source=base&agg_q=%40orgName&agg_q_source=base&agg_t=count&clustering_pattern_field_path=message&cols=%40orgName%2C%40extOrderId%2Csku%2C%40error.status%2C%40error.failure.code%2Cerror.message%2C%40connectorName&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&top_n=10&top_o=top&viz=stream&x_missing=true&from_ts=1746346773210&to_ts=1746433173210&live=true"
+  },
+  {
+    "orgKey": "default-org",
+    "connectorName": "connector-ecomm-orderhive",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20env%3Amaster%20service%3Aconnector-ecomm-orderhive%20-%22timed%20out%22%20-%22expired%20token%22%20-%22refresh%20failed%22&agg_m=count&agg_m_source=base&agg_t=count&cols=%40orgName%2C%40error.status%2C%40extOrderId%2C%40error&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&viz=stream&from_ts=1688372149648&to_ts=1688458549648&live=true"
+  },
+  {
+    "orgKey": "default-org",
+    "connectorName": "connector-3pl-masonhub",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20functionname%3A%2Amaster%2A%20service%3Aconnector-3pl-masonhub%20-%28%2Atimeout%20%2Amain%2A%29%20-%40module%3A%28p17-api%20OR%20vendor-api%29%20-integration%5C%3Ainit%2A%20-%40error.error.messages.errors%3A%2Ais%5C%20already%5C%20taken%2A%20-%28%40error.failure.code%3A409%20AND%20fulfillments%2A%29%20-%40error.error.messages.field_name%3A%28customer_bar_code%20OR%20customer_identifier%20OR%20commodity_code%29%20-%40error.errors.messages.errors%3A%28%22100%3A%20shipping_provider%20is%20a%20required%20field%22%20OR%20204%5C%3A%5C%20quantity%5C%20%2A%5C%20for%5C%20sku%2A%20OR%20303%5C%3A%5C%20%27Sku%27%5C%20with%5C%20sku_customer_id%2A%29%20-UNCOMMENT_ASAP%20-%40error.errors.messages.errors%3AMasonHub%5C%20cannot%5C%20process%5C%20orders%5C%20with%5C%20foreign%5C%20characters%2A%20-%40error.errors.messages.errors%3A201%5C%3A%5C%20shipping_address%2Amust%5C%20be%2A&agg_m=count&agg_m_source=base&agg_t=count&clustering_pattern_field_path=message&cols=%40orgName%2C%40extOrderId%2Csku%2C%40error.status%2Cerror.errors%5B0%5D.messages%5B0%5D.errors%5B0%5D%2Cerror.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&view=spans&viz=stream&from_ts=1747682158577&to_ts=1747768558577&live=true"
+  },
+  {
+    "orgKey": "default-org",
+    "connectorName": "connector-ecomm-etsy",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20functionname%3A%2Amaster%2A%20service%3Aconnector-ecomm-etsy%20-%28%2Atimeout%20%2Amain%2A%29%20-%40module%3A%28p17-api%20OR%20vendor-api%29%20-integration%5C%3Ainit%2A%20-%28%22products%3Apoll%3Aitem%3Afailed%22%20%22Duplicate%20key%22%29%20-UNCOMMENT_ASAP%20-%22Could%20not%20find%20a%20Listing%20with%20listing_id%22%20-%22inventory%3Aapply%3Aproduct%3Amissed%22%20-%22Parent%20product%20not%20found%22&agg_m=count&agg_m_source=base&agg_t=count&cols=%40orgName%2CextOrderId%2Csku%2C%40error.status%2C%40error.failure.code%2Cerror.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&view=spans&viz=stream&from_ts=1748692745792&to_ts=1748779145792&live=true"
+  },
+  {
+    "orgKey": "default-org",
+    "connectorName": "connector-bi-snowflake",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20env%3Amaster%20service%3Aconnector-bi-snowflake%20-%2Atimeout%20-%40module%3A%28p17-api%20OR%20vendor-api%29%20-%28ECONNRESET%20AND%20integration%2A%29%20-UNCOMMENT_THE_FOLLOWING_FOR_MORE_ERRORS%20-%22XSQL%20Compilation%22%20-XAxiosError%20-%22XDuplicate%20row%20detected%22%20-%40Xexception.exceptionDetails%3ADuplicate%5C%20row%5C%20detected%2A%20-%22table%3Aapply%3Arows%3Acheck%3Aduplicate%3Adrop%22&agg_m=count&agg_m_source=base&agg_t=count&cols=%40orgName%2C%40extOrderId%2C%40sku%2C%40error.name%2C%40exception.exceptionDetails%2Cerror.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&view=spans&viz=stream&from_ts=1731311061991&to_ts=1731397461991&live=true"
+  },
+  {
+    "orgKey": "default-org",
+    "connectorName": "connector-erp-finale-inventory",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20functionname%3A%2Amaster%2A%20service%3Aconnector-erp-finale-inventory%20-%28%2Atimeout%20%2Amain%2A%29%20-%22Task%20timed%20out%22%20-%40module%3Avendor-api%20-%40error.parsed.msg%3A%22Xcannot%20edit%20inactive%20product%22%20-%40err.parsed.msg%3A%22Xcannot%20edit%20inactive%20product%22%20-%28%22can%20only%20edit%20shipments%20for%20open%20orders%22%20%22fulfillments%3Aapply%3Afailed%22%29%20-%28%22invalid%20product%20ID%20or%20url%22%20%22orders%3Aapply%3Afailed%22%29%20-UNCOMMENT_ASAP%20-%40extOrderId%3A%23SOA34522&agg_m=count&agg_m_source=base&agg_t=count&clustering_pattern_field_path=message&cols=%40orgName%2CextOrderId%2Csku%2Cerr.parsed.msg%2C%40error.parsed.msg%2Cerror.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&viz=stream&from_ts=1752315048507&to_ts=1752401448507&live=true"
+  },
+  {
+    "orgKey": "default-org",
+    "connectorName": "connector",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20env%3Amaster%20service%3Aconnector%2A%20exceeded&agg_m=count&agg_m_source=base&agg_t=count&cols=%40orgName%2C%40connectorName%2C%40service%2C%40error.statusCode&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&viz=stream&from_ts=1755585049309&to_ts=1755671449309&live=true"
+  },
+  {
+    "orgKey": "Ware2Go Sandbox",
+    "connectorName": "connector-ecomm-mirakl",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20functionname%3A%2Amaster%2A%20service%3Aconnector-ecomm-mirakl%20-%28%2Atimeout%20%2Amain%2A%29%20-%40module%3A%28p17-api%20OR%20vendor-api%29%20-integration%5C%3Ainit%2A%20-%28%40error.status%3A%28401%20OR%20403%29%20AND%20%40orgName%3A%22Ware2Go%20Sandbox%22%29%20-UNCOMMENT_ASAP%20-%28%40orgName%3A%22Chewer%27s%20Joy%20Pet%20Treats%20LLC%22%20%28shipping%5C%3Amethods%2A%20OR%20%22orders%3Apoll%3Afailed%22%29%29%20-UNCOMMENT_ASAP%20-%28%40orgName%3A%22Chewer%27s%20Joy%20Pet%20Treats%20LLC%22%20%22inventory%3Aapply%3Afailed%22%20%40error.status%3A404%29&agg_m=count&agg_m_source=base&agg_t=count&clustering_pattern_field_path=message&cols=%40orgName%2CextOrderId%2Csku%2C%40error.status%2C%40error.text%2Cerror.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&view=spans&viz=stream&from_ts=1752133001956&to_ts=1752219401956&live=true"
+  },
+  {
+    "orgKey": "default-org",
+    "connectorName": "connector-ecomm-chord",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20env%3Amaster%20service%3Aconnector-ecomm-chord%20-%22integration%3Amain%3Atimeout%22%20-%22connector%3Amain%3Atimeout%22%20-%22products%3Amain%3Atimeout%22%20-%40module%3A%28vendor-api%20OR%20p17-api%29%20-%28%40error.name%3AFetchError%20AND%20%28integration%2A%20OR%20locations%2A%29%29%20-%40error.error%3A%22XCannot%20ready%20shipment.%22%20-UNCOMMENT_ASAP%20-%28%22orders%3Apoll%3Astuck%22%20AND%20%40orgName%3AOmorpho%2A%29&agg_m=count&agg_m_source=base&agg_t=count&cols=%40orgName%2C%40extOrderId%2Csku%2C%40error.status%2C%40error.failure.code%2C%40error.error%2Cerror.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&view=spans&viz=stream&from_ts=1749719394444&to_ts=1749805794444&live=true"
+  },
+  {
+    "orgKey": "default-org",
+    "connectorName": "connector-3pl-excelsior",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20functionname%3A%2Amaster%2A%20service%3Aconnector-3pl-excelsior%20-%28%2Atimeout%20%2Amain%2A%29%20-%40module%3A%28vendor-api%20OR%20p17-api%29%20-integration%5C%3Ainit%2A%20-%28%22shipments%3Aapply%3Afailed%22%20AND%20%28%40error.parsed.error%3AORDER%5C%20CONTAINED%5C%20OUT-OF-STOCK%5C%20ITEMS%2A%20OR%20ORDER%5C%20CONTAINED%5C%20INVALID%5C%20ITEMS%2A%20OR%20%28bill_address%20%22does%20not%20match%20expected%20pattern%22%29%20OR%20%28%22Required%20attribute%22%20%22is%20missing%20from%20POST%20data%22%29%29%29&agg_m=count&agg_m_source=base&agg_t=count&cols=%40orgName%2C%40extOrderId%2Csku%2C%40error.status%2C%40error.parsed.error%2Cerror.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&view=spans&viz=stream&from_ts=1750750936250&to_ts=1750837336250&live=true"
+  },
+  {
+    "orgKey": "default-org",
+    "connectorName": "connector-3pl-nri",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20env%3Amaster%20service%3Aconnector-3pl-nri%20-%2Atimeout%20-%40module%3Avendor-api%20-%40error.details.errors.Description%3A%28%22This%20is%20not%20a%20valid%20product%20group%20for%20this%20client.%22%20OR%20%22This%20GTIN%20has%20an%20invalid%20check%20digit.%22%20OR%20%22This%20is%20a%20duplicate%20UPC%20in%20this%20table.%22%20OR%20%22This%20GTIN%20has%20invalid%20characters%20in%20it.%22%29%20-%28%22Xfulfillments%3Apoll%3Aitem%3Aconfirm%3Afailed%22%20AND%20%40error.status%3A500%29%20-UNCOMMENT_ASAP%20-%28%28%22fulfillments%3Apoll%3Afailed%22%20OR%20%22receipts%3Apoll%3Afailed%22%29%20AND%20%40orgName%3ANRI%29&agg_m=count&agg_m_source=base&agg_t=count&clustering_pattern_field_path=message&cols=%40orgName%2C%40extOrderId%2C%40sku%2C%40error.status%2C%40error.code%2C%40error.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&view=spans&viz=stream&from_ts=1738223172635&to_ts=1738309572635&live=true"
+  },
+  {
+    "orgKey": "default-org",
+    "connectorName": "connector-ecomm-nuorder",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20env%3Amaster%20service%3Aconnector-ecomm-nuorder%20-%28%2Atimeout%20%2Amain%2A%29%20-%40module%3A%28p17-api%20OR%20vendor-api%29%20-%40error.status%3A502%20-%40error.failure.errors%3Aaddress%2A%20-%22No%20items%20to%20fulfill%22%20-%28%40XorgName%3A%22Melinda%20Maria%20Designs%22%20AND%20%40error.failure.products.errors%3A%22sku%3A%20required%20field%20does%20not%20exist%22%29&agg_m=count&agg_m_source=base&agg_t=count&cols=%40orgName%2CextOrderId%2Csku%2C%40error.text%2C%40error.failure.code%2Cerror.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&viz=stream&from_ts=1740389863692&to_ts=1740476263692&live=true"
+  },
+  {
+    "orgKey": "default-org",
+    "connectorName": "connector-erp-cin7",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20functionname%3A%2Amaster%2A%20service%3Aconnector-erp-cin7%20-%28%2Atimeout%20%2Amain%2A%29%20-integration%5C%3Ainit%2A%20-%40module%3A%28vendor-api%20OR%20p17-api%29%20-%22socket%20hang%20up%22%20-%28%40error.status%3A%3E%3D500%20AND%20%28locations%2A%20OR%20products%2A%20OR%20inventory%2A%20OR%20%22orders%3Apoll%3Afailed%22%20OR%20%22orders%3Alist%3Afailed%22%20OR%20%22orders%3Apoll%3Alocations%3Aresolve%3Afailed%22%29%29%20-UNCOMMENT_ASAP%20-%28%40error.failure.message%3A%22Duplicate%20key%20error%22%20products%2A%20%40orgName%3ARACHEL%2A%29%20-%22refunds%3Aapply%3Acredit%3Askip%3Alines_empty%22&agg_m=count&agg_m_source=base&agg_t=count&cols=%40orgName%2C%40extOrderId%2C%40sku%2C%40error.code%2C%40error.status%2C%40error.failure.code%2Cerror%5B0%5D%2Cerror.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&view=spans&viz=stream&from_ts=1753170161416&to_ts=1753256561416&live=true"
+  },
+  {
+    "orgKey": "default-org",
+    "connectorName": "connector-ecomm-shiphero",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20functionname%3A%2Amaster%2A%20service%3Aconnector-ecomm-shiphero%20-%28%2Atimeout%20%2Amain%2A%29%20-%40module%3Ap17-api%20-integration%5C%3Ainit%2A%20-integration%5C%3Acheck%2A%20-%28%28%22shipments%3Apoll%3Acancel%3Afailed%22%20OR%20%22fulfillments%3Apoll%3Afailed%22%20OR%20%22inventory%3Apoll%3Apage%3Afailed%22%29%20AND%20%22There%20are%20not%20enough%20credits%22%29%20-%40error.failure.fulfillments.errors%3A%22lineItems%3A%20required%20field%20does%20not%20exist%22%20-%28%22Xproducts%3Aapply%3Afailed%22%20AND%20%22Invalid%20warehouse_id%22%29%20-%28%22XProduct%20with%20sku%22%20%22does%20not%20exist%22%29%20-%28%22Xfulfillments%3Apoll%3Aitem%3Afailed%22%20%22Cannot%20read%20properties%22%29&agg_m=count&agg_m_source=base&agg_t=count&clustering_pattern_field_path=message&cols=%40orgName%2C%40extOrderId%2C%40sku%2C%40error.response.status%2C%40error.failure.code%2Cerror.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&view=spans&viz=stream&from_ts=1750146309972&to_ts=1750232709972&live=true"
+  },
+  {
+    "orgKey": "default-org",
+    "connectorName": "connector-3pl-orderdesk",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20env%3Amaster%20service%3Aconnector-3pl-orderdesk%20-%28%2Atimeout%20%2Amain%2A%29%20-%40module%3A%28p17-api%20OR%20vendor-api%29%20-integration%5C%3Ainit%2A%20-UNCOMMENT_ASAP%20-%40connectorName%3Aaf968d3ca4a437ac&agg_m=count&agg_m_source=base&agg_t=count&cols=%40orgName%2CextOrderId%2C%40error.status%2C%40error.failure.code%2C%40error.parsed.message%2Cerror.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&view=spans&viz=stream&from_ts=1740645633841&to_ts=1740732033841&live=true"
+  },
+  {
+    "orgKey": "CIRRO SANDBOX",
+    "connectorName": "connector-ecomm-bigcommerce-v3",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20functionname%3A%2Amaster%2A%20service%3Aconnector-ecomm-bigcommerce-v3%20-%28%2Atimeout%20%2Amain%2A%29%20-%40module%3A%28p17-api%20OR%20vendor-api%29%20-integration%5C%3Ainit%2A%20-%28%40error.status%3A%3E%3D500%20%22misc%3Astore%22%29%20-%28%2Aschema%2A%20AND%20integration%2A%29%20-%28%28%40error.failure.errors%3A%22Duplicate%20key%20error%22%20OR%20%40error.failure.message%3A%2ADuplicate%5C%20key%5C%20error%2A%29%20AND%20product%2A%29%20-%28%40orgName%3A%28%22Delaney%20Sandbox%22%20OR%20%22Delaney%20Production%22%29%20AND%20product%2A%29%20-%40error.failure.errors%3A%22order%20archived%2C%20only%20status%20may%20be%20updated%22%20-%28%22orders%3Apoll%3Aitem%3Aresolve%3Afailed%22%20AND%20%22Not%20authorized%22%29%20-%22products%3Acheck_vendor_product%3Aext%3Aconflict%22%20-%22products%3Aapply%3Aoptions_sync%3Acreate_required%22%20-Conflict%20-%22Product%20option%20missed%22%20-UNCOMMENT_ASAP%20-%28%40orgName%3A%22CIRRO%20SANDBOX%22%20%28%22Connection%20test%20failed%22%20OR%20%28401%20integration%2A%29%29%29%20-%22products%3Aapply%3Aoption%3Afailed%22%20-%22No%20option%20values%22%20-%22Pipe17-to-vendor%20options%20count%20mismatch%22%20-%22Product%20option%20not%20expected%22%20-No%5C%20variants%5C%20with%5C%20id%5C%20%2A%5C%20found%2A%20-%22Cannot%20update%22%20-%22products%3Aapply%3Aoptions_sync%3Adelete_required%22%20-%22products%3Acheck_vendor_product%3Asku%3Aconflict%22%20-%22The%20product%20name%20is%20a%20duplicate%22&agg_m=count&agg_m_source=base&agg_t=count&clustering_pattern_field_path=message&cols=%40orgName%2C%40extOrderId%2C%40sku%2C%40error.status%2C%40error.failure.code%2Cerror.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&view=spans&viz=stream&from_ts=1751110071754&to_ts=1751196471754&live=true"
+  },
+  {
+    "orgKey": "default-org",
+    "connectorName": "connector-erp-greenspoon",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20env%3Amaster%20service%3Aconnector-erp-greenspoon%20-ECONNREFUSED%20-%22timed%20out%22%20-%40error.status%3A404%20-%40error.extendedMessage%3A%22Product%20not%20found%2C%20not%20adding%20to%20cart.%20%5BproductId%3A%20%5D%22%20-%40error%3A%22Product%20not%20found%2C%20not%20adding%20to%20cart.%20%5BproductId%3A%20%5D%22&agg_m=count&agg_m_source=base&agg_t=count&cols=%40orgName%2C%40extOrderId%2C%40error%2C%40error.status&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&viz=stream&from_ts=1664790063184&to_ts=1664876463184&live=true"
+  },
+  {
+    "orgKey": "default-org",
+    "connectorName": "connector-3pl-boxc",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20functionname%3A%2Amaster%2A%20service%3Aconnector-3pl-boxc%20-%2Atimeout%20-%22Task%20timed%20out%22%20-%40module%3Ap17-api%20-integration%5C%3Ainit%2A%20-locations%2A%20-%28%28%22shipments%3Aapply%3Afailed%22%20OR%20integration%2A%20OR%20webhooks%2A%29%20AND%20%28%22Service%20Unavailable%22%20OR%20%40error._status%3A504%29%29%20-%28%40error._status%3A400%20AND%20%28%22Error%3A%20%2Forder%2Fconsignor%2Fphone%22%20OR%20%22Error.%20%2Forder%2Fconsignor%2Fprovince%22%20OR%20%22Consignee%2FRecipient%20name%22%20OR%20%22Use%20ignore_bad_address%22%20OR%20%22Address%20Error%3A%20Address%20Not%20Found%22%20OR%20%28%22Validation%20Error%22%20AND%20%28%22Minimum%20string%20length%22%20OR%20%22Maximum%20string%20length%22%29%29%20OR%20%22order.to.name%20will%20not%20be%20accepted%22%20OR%20%22Validation%20Error.%20%2Forder%2Fto%2Fphone%22%29%29%20-%22Xfulfillments%3Apoll%3Aitem%3Aresolve%3Afailed%22%20-%28%40error._status%3A%3E%3D500%20inventory%2A%29&agg_m=count&agg_m_source=base&agg_t=count&clustering_pattern_field_path=message&cols=%40orgName%2C%40extOrderId%2Csku%2C%40error._status%2C%40error.failure.code%2Cerror.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&view=spans&viz=stream&from_ts=1753641723063&to_ts=1753728123063&live=true"
+  },
+  {
+    "orgKey": "default-org",
+    "connectorName": "connector-erp-quickbooks",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20functionname%3A%2Amaster%2A%20service%3Aconnector-erp-quickbooks%20-%2Atimeout%20-%40module%3A%28p17-api%20OR%20vendor-api%29%20-integration%5C%3Ainit%2A%20-%22locations%3Apoll%3Afailed%22%20-%28%22product%3Apoll%3Aitem%3Afailed%22%20%40error.failure.message%3A%22Duplicate%20key%20error%22%29%20-UNCOMMENT_THIS_ASAP%20-%40error.message.Error.element%3AShipMethodRef%20-%40error.message.Error.Detail%3A%2ANot%5C%20a%5C%20valid%5C%20product%5C%20or%5C%20service%5C%20name%2A%20-%40Xerror.message.Error.Detail%3A%22Required%20parameter%20ExpenseAccountRef%20or%20IncomeAccountRef%20is%20missing%20in%20the%20request%22%20-%40error._raw_response.payload.Fault.Error.Detail%3A%28The%5C%20name%5C%20supplied%5C%20already%5C%20exists%2A%20OR%20String%5C%20length%5C%20specified%5C%20does%5C%20not%5C%20match%5C%20the%5C%20supported%5C%20length%2A%20OR%20%22Required%20parameter%20Line.DetailType%20is%20missing%20in%20the%20request%22%29%20-%28%2A%3AThe%5C%20account%5C%20period%5C%20has%5C%20closed%20%2A%20inventory%2A%29%20-%28%40error._raw_response.payload.Fault.Error.Message%3AAccount%5C%20Period%5C%20Closed%2A%20fulfillments%2A%29&agg_m=count&agg_m_source=base&agg_t=count&clustering_pattern_field_path=message&cols=%40orgName%2CextOrderId%2Csku%2C%40error.failure.code%2C%40error._raw_response.status%2Cerror.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&view=spans&viz=stream&from_ts=1754132802672&to_ts=1754219202672&live=true"
+  },
+  {
+    "orgKey": "default-org",
+    "connectorName": "connector-3pl-amazon",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20functionname%3A%2Amaster%2A%20service%3Aconnector-3pl-amazon%20-%28%2Atimeout%20%2Amain%2A%29%20-%40module%3A%28vendor-api%20OR%20p17-api%29%20-%22Task%20timed%20out%22%20-integration%5C%3Ainit%2A%20-%22Access%20to%20requested%20resource%20is%20denied.%22%20-locations%2A%20-%22The%20request%20must%20contain%20the%20parameter%22%20-%22Value%20Invalid%20for%20parameter%22%20-fulfillments%5C%3Apoll%5C%3Aff%5C%3Aresolve%2A%20-UNCOMMENT_THIS_ASAP%20-%28inventory%5C%3Apoll%2A%20%28%22Next%20token%22%20OR%20%22validation%20error%22%20OR%20%22internal%20error%22%20OR%20%22socket%20hang%20up%22%20OR%20ETIMEDOUT%29%29%20-%28receipts%2A%20%28%40error.failure.code%3A403%20OR%20%40error.code%3AQuotaExceeded%29%29&agg_m=count&agg_m_source=base&agg_t=count&clustering_pattern_field_path=message&cols=%40orgName%2C%40extOrderId%2C%40sku%2C%40error.code%2C%40error.failure.code%2C%40error.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&view=spans&viz=stream&from_ts=1754246569087&to_ts=1754332969087&live=true"
+  },
+  {
+    "orgKey": "Sandbox - Mohawk Group",
+    "connectorName": "connector-ecomm-walmart",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20functionname%3A%2Amaster%2A%20service%3Aconnector-ecomm-walmart%20-%28%2Atimeout%20%2Amain%2A%29%20-%40module%3A%28p17-api%20OR%20vendor-api%29%20-integration%5C%3Ainit%2A%20-%28%40error.httpStatus%3A%28520%20OR%20521%29%20%28locations%2A%20OR%20inventory%2A%20OR%20%22orders%3Apoll%3Afailed%22%29%29%20-%28%22Unexpected%20end%20of%20JSON%20input%22%20integration%2A%29%20-%28%22locations%3Apoll%3Aitem%3Afailed%22%20%40orgName%3A%22Sandbox%20-%20Mohawk%20Group%22%29%20-%28%22locations%3Apoll%3Afailed%22%20%40orgName%3A%28Hoffco%20OR%20tavoro%2A%29%29%20-UNCOMMENT-ASAP%20-%28%22products%3Apoll%3Afailed%22%20%40orgName%3A%28URBIE%20OR%20%22Juan%20Valdez%22%29%29%20-%28%22inventory%3Aapply%3Afailed%22%20%40error.httpStatus%3A404%20%40orgName%3A%22AD%20Sutton%22%29&agg_m=count&agg_m_source=base&agg_t=count&clustering_pattern_field_path=message&cols=%40orgName%2C%40extOrderId%2Csku%2C%40error.httpStatus%2C%40error.failure.code%2Cerror.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&view=spans&viz=stream&from_ts=1754754826258&to_ts=1754841226258&live=true"
+  },
+  {
+    "orgKey": "default-org",
+    "connectorName": "connector-ecomm-ebay",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20functionname%3A%2Amaster%2A%20service%3Aconnector-ecomm-ebay%20-%2Atimeout%20-%22Task%20timed%20out%22%20-%40module%3A%28p17-api%20OR%20vendor-api%29%20-integration%5C%3Ainit%2A%20-%40error.failure.orders.errors%3AlineItems%2Asku%2Arequired%2A%20-%22FixedPrice%20item%20ended%22%20-%22SKU%20Mismatch%22%20-%22XInvalid%20line%20item%20id%22%20-%40error.failure.products.errors%3A%22XVariants%20are%20not%20allowed%20for%20product%20variant%22%20-%28%22Item%20not%20found%22%20%28products%2A%20OR%20inventory%2A%29%29%20-%28%22Too%20many%20results%22%20%22products%3Apoll%3Afailed%22%29%20-%22This%20listing%20was%20reported%20by%20the%20intellectual%20property%22&agg_m=count&agg_m_source=base&agg_t=count&cols=%40orgName%2C%40extOrderId%2C%40sku%2Cerror.description%2Cerror.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&view=spans&viz=stream&from_ts=1753861484494&to_ts=1753947884494&live=true"
+  },
+  {
+    "orgKey": "default-org",
+    "connectorName": "connector-ecomm-veeqo",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20env%3Amaster%20service%3Aconnector-ecomm-veeqo%20-%22Task%20timed%20out%22%20-%40module%3A%28p17-api%20OR%20vendor-api%29%20-%22inventory%3Aapply%3Aproduct%3Anot_found%22&agg_m=count&agg_m_source=base&agg_t=count&cols=%40orgName%2C%40extOrderId%2C%40extShipmentId%2Csku%2C%40error.status%2C%40error.failure.code%2C%40error.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&viz=stream&from_ts=1704696662770&to_ts=1704783062770&live=true"
+  },
+  {
+    "orgKey": "default-org",
+    "connectorName": "connector-ecomm-amazon",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20functionname%3A%2Amaster%2A%20service%3Aconnector-ecomm-amazon%20-%2Atimeout%20-%22timed%20out%22%20-%40module%3A%28vendor-api%20OR%20p17-api%29%20-integration%5C%3Ainit%2A%20-%22Access%20to%20requested%20resource%20is%20denied.%22%20-%40error.failure.code%3A423%20-%28%22You%20exceeded%20your%20quota%22%20AND%20integration%2A%29%20-%22orders%3Apoll%3Ascan%3Afailed%22%20-%28%40error.failure.code%3A409%20AND%20products%2A%29%20-%28%40error.failure.code%3A429%20AND%20%40orgName%3ANestopia%20AND%20%28integration%2A%20OR%20products%2A%29%29%20-%22fulfillments%3Afeed%3Acheck%3Areport%22%20-%22fulfillments%3Afeed%3Acheck%3Aerrors%22%20-%22fulfillments%3Aapply%3Aitem%3Askip%3Acode%3Aempty%22%20-%28%28%22orders%3Apoll%3Aitem%3Afailed%22%20OR%20%22orders%3Apoll%3Aitem%3Aresolve%3Afailed%22%29%20%22Not%20authorized%22%29%20-%2Amissed%20-%2Asiblings%2A%20-%2Aextra%2A&agg_m=count&agg_m_source=base&agg_t=count&clustering_pattern_field_path=message&cols=%40orgName%2C%40extOrderId%2C%40sku%2C%40error.code%2Cerror.message&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&view=spans&viz=stream&from_ts=1755584379428&to_ts=1755670779428&live=true"
+  },
+  {
+    "orgKey": "default-org",
+    "connectorName": "connector-erp-sos-inventory",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20env%3Amaster%20service%3Aconnector-erp-sos-inventory%20-%40module%3Avendor-api%20-%28%22API%20request%20denied.%20%20Please%20contact%20SOS%20Inventory%20support%22%20AND%20%40orgName%3AT20221012%29%20-%28%22Xorders%3Asubmit%3Aitems%3Aresolve%3Afailed%22%20AND%20%40sku%3A%2A%29&agg_m=count&agg_m_source=base&agg_t=count&cols=%40orgName%2C%40extOrderId%2Csku%2C%40error.status%2C%40error.failure.code%2C%40error.parsed.message%2Cerror.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&viz=stream&from_ts=1728807730829&to_ts=1728894130829&live=true"
+  },
+  {
+    "orgKey": "default-org",
+    "connectorName": "connector-erp-xero",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20env%3Amaster%20service%3Aconnector-erp-xero%20-%22timed%20out%22%20-ETIMEDOUT%20-ECONNREFUSED%20-ECONNRESET&cols=%40orgName%2C%40extOrderId%2C%40fulfillmentId%2C%40error.failure.code&fromUser=true&index=&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&viz=stream&from_ts=1666346009061&to_ts=1666950809061&live=true"
+  },
+  {
+    "orgKey": "default-org",
+    "connectorName": "connector-ecomm-brandboom",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20functionname%3A%2Amaster%2A%20service%3Aconnector-ecomm-brandboom%20-%2Atimeout%20-%40module%3Ap17-api%20-integration%5C%3Ainit%2A%20-%28%28ETIMEDOUT%20OR%20EHOSTUNREACH%20OR%20ECONNRESET%20OR%20%2A%3AThrottledException%20OR%20502%20OR%20%22socket%20hang%20up%22%29%20AND%20%28integration%2A%20OR%20location%2A%29%29%20-%28%40error.failure.message%3A%2ADuplicate%5C%20key%2A%20AND%20product%2A%29%20-%28%40Xerror.value.errors.message%3A%22A%20duplicate%20request%20is%20already%20waiting%20to%20be%20processed.%22%20AND%20product%2A%29%20-UNCOMMENT_ASAP%20-%2A%3A%28There%5C%27re%5C%20invoices%5C%20created%2A%20OR%20Invoices%5C%20have%5C%20already%5C%20been%5C%20created%2A%29%20-%2A%3A%28XThe%5C%20following%5C%20SKUs%5C%20do%5C%20not%5C%20exist%2A%29&agg_m=count&agg_m_source=base&agg_t=count&clustering_pattern_field_path=message&cols=%40orgName%2CextOrderId%2C%40sku%2C%40error.code%2C%40error.httpStatus%2Cerror.details.result.value.failed%2Cerror.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&viz=stream&from_ts=1750500657448&to_ts=1750587057448&live=true"
+  },
+  {
+    "orgKey": "default-org",
+    "connectorName": "connector-ecomm-brandboom",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20functionname%3A%2Amaster%2A%20service%3Aconnector-ecomm-brandboom%20-%2Atimeout%20-%40module%3Ap17-api%20-integration%5C%3Ainit%2A%20-%28%28ETIMEDOUT%20OR%20EHOSTUNREACH%20OR%20ECONNRESET%20OR%20%2A%3AThrottledException%20OR%20502%20OR%20%22socket%20hang%20up%22%29%20AND%20%28integration%2A%20OR%20location%2A%29%29%20-%28%40error.failure.message%3A%2ADuplicate%5C%20key%2A%20AND%20product%2A%29%20-%28%40Xerror.value.errors.message%3A%22A%20duplicate%20request%20is%20already%20waiting%20to%20be%20processed.%22%20AND%20product%2A%29%20-UNCOMMENT_ASAP%20-%2A%3A%28There%27re%5C%20invoices%5C%20created%2A%20OR%20Invoices%5C%20have%5C%20already%5C%20been%5C%20created%2A%29%20-%2A%3A%28XThe%5C%20following%5C%20SKUs%5C%20do%5C%20not%5C%20exist%2A%29&agg_m=count&agg_m_source=base&agg_t=count&clustering_pattern_field_path=message&cols=%40orgName%2CextOrderId%2C%40sku%2C%40error.code%2C%40error.httpStatus%2Cerror.details.result.value.failed%2Cerror.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&viz=stream&from_ts=1750500657448&to_ts=1750587057448&live=true"
+  },
+  {
+    "orgKey": "default-org",
+    "connectorName": "connector-ecomm-vtex",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20functionname%3A%2Amaster%2A%20service%3Aconnector-ecomm-vtex%20-%28%2Atimeout%20%2Amain%2A%29%20-%22Task%20timed%20out%22%20-%40module%3A%28p17-api%20OR%20vendor-api%29%20-integration%5C%3Ainit%2A%20-%40Xerror.failure.code%3A409&agg_m=count&agg_m_source=base&agg_t=count&clustering_pattern_field_path=message&cols=%40orgName%2CextOrderId%2C%40sku%2C%40error.status%2C%40error.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&viz=stream&from_ts=1751223141192&to_ts=1751309541192&live=true"
+  },
+  {
+    "orgKey": "default-org",
+    "connectorName": "connector-ecomm-orderdesk",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20functionname%3A%2Amaster%2A%20service%3Aconnector-ecomm-orderdesk%20-%28%2Atimeout%20%2Amain%2A%29%20-%40module%3A%28p17-api%20OR%20vendor-api%29%20-integration%5C%3Ainit%2A&agg_m=count&agg_m_source=base&agg_t=count&clustering_pattern_field_path=message&cols=%40orgName%2C%40extOrderId%2C%40error.status%2C%40error.failure.code%2C%40error.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&viz=stream&from_ts=1745665111420&to_ts=1745751511420&live=true"
+  },
+  {
+    "orgKey": "Kevin Sandbox",
+    "connectorName": "connector-3pl-ftp",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20env%3Amaster%20service%3Aconnector-3pl-ftp%20-%2Atimeout%20-integration%5C%3A%2A%20-auth%5C%3A%2A%20-%28%22connect-%3EgetConnection%3A%20All%20configured%20authentication%20methods%20failed%22%20AND%20%40orgName%3A%22Kevin%20Sandbox%22%29%20-%28%22Could%20not%20create%20socket.%22%20AND%20NOT%20order%2A%29%20-%22XDirectory%20not%20found.%22%20-%22XLogin%20incorrect.%22%20-UNCOMMENT_THIS_ASAP%20-%28%40error.code%3A450%20AND%20%40orgName%3A%22AT%20Cross%20%28Magento%29%22%29&agg_m=count&agg_m_source=base&agg_t=count&clustering_pattern_field_path=message&cols=%40orgName%2C%40extOrderId%2C%40extShipmentId%2C%40error.failure.code%2C%40error.failure.fulfillments%5B0%5D.errors%5B0%5D%2Cerror.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&viz=stream&from_ts=1734686259643&to_ts=1734772659643&live=true"
+  },
+  {
+    "orgKey": "Kevin Sandbox",
+    "connectorName": "connector-ecomm-ftp",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20env%3Amaster%20service%3Aconnector-ecomm-ftp%20-%2Atimeout%20-%40module%3A%28p17-api%20OR%20vendor-api%29%20-integration%5C%3Ainit%2A%20-locations%2A%20-%28%40error.code%3AERR_GENERIC_CLIENT%20AND%20%40orgName%3A%22Kevin%20Sandbox%22%29%20-%28%22No%20such%20file%22%20AND%20%40orgName%3A%22Hearst%20Sandbox%22%29%20-%28%22Login%20incorrect%22%20AND%20%40orgName%3A%28%2200%20Kasaa%2C%20Inc.%22%20OR%20%2200%20Kasaa%20%28Anand%29%2C%20Inc.%22%29%29%20-%40error.failure.orders.errors%3AXlineItems%2Asku%2Arequired%2A%20-%40error.failure.orders.errors%3AXlineItems%2Aquantity%2Arequired%2A%20-%40error.failure.errors%3A%22order%20archived%2C%20only%20status%20may%20be%20updated%22%20-%28%22Xorders%3Apoll%3Aitem%3Afailed%22%20AND%20%22Invalid%20time%20value%22%29%20-%28%22connect-%3EgetConnection%22%20AND%20%40orgName%3A%22Thru%20the%20Bible%22%29&agg_m=count&agg_m_source=base&agg_t=count&cols=%40orgName%2C%40extOrderId%2C%40error.name%2Corder.customFields%5B0%5D.value%2Cerror.message%2C%40error.code&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&view=spans&viz=stream&from_ts=1735026871270&to_ts=1735113271270&live=true"
+  },
+  {
+    "orgKey": "Audio Advisor",
+    "connectorName": "connector-3pl-ware2go",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20functionname%3A%2Amaster%2A%20service%3Aconnector-3pl-ware2go%20-%28%2Atimeout%20%2Amain%2A%29%20-%22Task%20timed%20out%22%20-%28%40module%3Ap17-api%20OR%20vendor-api%29%20-integration%5C%3Ainit%2A%20-%40opt.manual%3Afalse%20-locations%2A%20-%22fulfillments%3Apoll%3Aitem%3Astatus%3Aunknown%22%20-%22fulfillments%3Apoll%3Aitem%3Apackage%3Aempty%22%20-%22fulfillments%3Apoll%3Aitem%3Asingle%3Aincomplete%22%20-%40details.errors.detail%3A%28%22No%20Outbound%20Orders%20allowed%20for%20this%20merchant.%20Please%20check%20billing%20settings.%22%20OR%20%22International%20shipping%20is%20not%20enabled%20for%20your%20organization.%22%20OR%20%22addressLine2%20must%20be%20shorter%20than%20or%20equal%20to%2045%20characters%22%29%20-%28%40orgName%3A%22Audio%20Advisor%22%20%40error.payload.errors.title%3A%28min%20OR%20minLength%20OR%20IsNumber%20OR%20isNumberString%20OR%20unique%20OR%20matches%20OR%20%22Non-Positive%20Value%22%20OR%20%22Missing%20Required%20Field%22%29%29%20-UNCOMMENT_ASAP%20-%40error.payload.errors.detail%3A%22property%20currency%20should%20not%20exist%22&agg_m=count&agg_m_source=base&agg_t=count&clustering_pattern_field_path=message&cols=%40orgName%2C%40extOrderId%2Csku%2C%40error.status%2C%40error.failure.code%2Cerror.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&view=spans&viz=stream&from_ts=1754466152066&to_ts=1754552552066&live=true"
+  },
+  {
+    "orgKey": "default-org",
+    "connectorName": "connector-3pl-deliverr",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20functionname%3A%2Amaster%2A%20service%3Aconnector-3pl-deliverr%20-%28%2Atimeout%20%2Amain%2A%29%20-%40module%3A%28vendor-api%20OR%20p17-api%29%20-integration%5C%3Ainit%2A%20-locations%2A%20-%28%22inventory%3Apoll%3Apage%3Afailed%22%20%40error.status%3A%3E%3D500%29%20-%28%40error.payload.message%3ADUPLICATE%20AND%20products%2A%29%20-%22shipments%3Aapply%3Aproducts%3Aunresolved%22%20-UNCOMMENT_ASAP%20-event_type_unknown%20-%28%40error.payload.title%3AERR_ASSERTION%20%28%22shipments%3Aapply%3Afailed%22%20OR%20integration%2A%29%29%20-%28%40error.failure.fulfillments.code%3A409%20%22fulfillments%3Apoll%3Aitem%3Aapply%3Afailed%22%29%20-%40error.payload.detail%3A%2AbundleId%2ANot%5C%20match%2A%20-%28STOCKOUT_AT_INGESTION%20%22shipments%3Aapply%3Afailed%22%29&agg_m=count&agg_m_source=base&agg_t=count&clustering_pattern_field_path=message&cols=%40orgName%2C%40extOrderId%2C%40sku%2C%40error.status%2C%40error.failure.code%2C%40error.payload.message%2Cerror.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&view=spans&viz=stream&from_ts=1753210113854&to_ts=1753296513854&live=true"
+  },
+  {
+    "orgKey": "CIRRO SANDBOX",
+    "connectorName": "connector-ecomm-ecwid",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20functionname%3A%2Amaster%2A%20service%3Aconnector-ecomm-ecwid%20-%28%2Atimeout%20%2Amain%2A%29%20-%40module%3A%28p17-api%20OR%20vendor-api%29%20-integration%5C%3Ainit%2A%20-%28%40orgName%3A%22CIRRO%20SANDBOX%22%20%28%22Failed%20to%20fetch%20application%20status%22%20OR%20%28%22products%3Apoll%3Afailed%22%20%40error.status%3A%28402%20OR%20403%20OR%20500%29%29%29%29&agg_m=count&agg_m_source=base&agg_t=count&clustering_pattern_field_path=message&cols=%40orgName%2CextOrderId%2Csku%2C%40error.status%2Cerror.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&view=spans&viz=stream&from_ts=1749581207432&to_ts=1749667607432&live=true"
+  },
+  {
+    "orgKey": "default-org",
+    "connectorName": "connector-ecomm-wix",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20functionname%3A%2Amaster%2A%20service%3Aconnector-ecomm-wix%20-%28%2Atimeout%20%2Amain%2A%29%20-%22timed%20out%22%20-%40module%3A%28p17-api%20OR%20vendor-api%29%20-integration%5C%3Ainit%2A%20-%28%22Duplicate%20key%20error%22%20products%2A%29&agg_m=count&agg_m_source=base&agg_t=count&clustering_pattern_field_path=message&cols=%40orgName%2CextOrderId%2Csku%2C%40error.status%2Cerror.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&viz=stream&from_ts=1747337047821&to_ts=1747423447821&live=true"
+  },
+  {
+    "orgKey": "Autocado Sandbox",
+    "connectorName": "connector-ecomm-magento-v3",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20functionname%3A%2Amaster%2A%20service%3Aconnector-ecomm-magento-v3%20-%28%2Atimeout%20%2Amain%2A%29%20-%22timed%20out%22%20-integration%5C%3Ainit%2A%20-%40module%3A%28vendor-api%20OR%20p17-api%29%20-%28%22Connectivity%20check%20failed%22%20AND%20integration%2A%29%20-%28%40orgName%3AWhisker-CA%20%22locations%3Apoll%3Asources%22%29%20-%28%40orgName%3A%22Autocado%20Sandbox%22%20%22locations%3Apoll%3Aitem%3Afailed%22%29%20-UNCOMMENT_ASAP%20-%22Get%20salable%20qty%20failed%22%20-%28%28%22fulfillments%3Apoll%3Aitem%3Aorder%3Amissed%22%20OR%20%22orders%3Aapply%3Acart%3Aadd%3Afailed%22%29%20%40orgName%3AWhisker-CA%29%20-%28%22orders%3Aapply%3Afailed%3Aid%3Aempty%22%20%40orgName%3AWhisker-CA%29%20-%28XfieldName%20%22is%20not%20supported%22%29&agg_m=count&agg_m_source=base&agg_t=count&clustering_pattern_field_path=message&cols=%40orgName%2C%40extOrderId%2C%40sku%2C%40error.failure.code%2C%40error.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&viz=stream&from_ts=1751309046182&to_ts=1751395446182&live=true"
+  },
+  {
+    "orgKey": "Tivic Health",
+    "connectorName": "connector-3pl-alom",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20env%3Amaster%20service%3Aconnector-3pl-alom%20-%22timed%20out%22%20-%40module%3Avendor-api%20-integration%5C%3Ainit%2A%20-%28%28%22shipments%3Alist%3Afailed%22%20OR%20%22shipments%3Afetch%3Afailed%22%20OR%20%22inventory%3Alist%3Afailed%22%20OR%20%22inventory%3Apoll%3Apage%3Afailed%22%29%20AND%20%40orgName%3A%22Tivic%20Health%22%29%20&cols=%40orgName%2CextOrderId%2C%40error.status%2C%40error.message.status%2Cerror.message&fromUser=true&index=&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&view=spans&viz=stream&from_ts=1701330945865&to_ts=1701417345865&live=true"
+  },
+  {
+    "orgKey": "default-org",
+    "connectorName": "connector-ecomm-mirakl-connect",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20functionname%3A%2Amaster%2A%20service%3Aconnector-ecomm-mirakl-connect%20-%28%2Atimeout%20%2Amain%2A%29%20-%40module%3A%28p17-api%20OR%20vendor-api%29%20-integration%5C%3Ainit%2A&agg_m=count&agg_m_source=base&agg_t=count&cols=%40orgName%2C%40extOrderId%2Csku%2C%40error.status%2C%40error.parsed.message%2Cerror.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&viz=stream&from_ts=1748083967363&to_ts=1748170367363&live=true"
+  },
+  {
+    "orgKey": "default-org",
+    "connectorName": "connector-special-autocado",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20env%3Amaster%20service%3Aconnector-special-autocado%20-%2Atimeout%20-%40module%3A%28vendor-api%20OR%20p17-api%29%20-integration%5C%3Ainit%2A&agg_m=count&agg_m_source=base&agg_t=count&cols=%40orgName%2C%40extOrderId%2Csku%2Cerror.status%2C%40error.failure.code%2Cerror.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&view=spans&viz=stream&from_ts=1730360783153&to_ts=1730447183153&live=true"
+  },
+  {
+    "orgKey": "default-org",
+    "connectorName": "connector-ecomm-cart-com",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20functionname%3A%2Amaster%2A%20service%3Aconnector-ecomm-cart-com%20-%28%2Atimeout%20%2Amain%2A%29%20-%22Task%20timed%20out%22%20-%40module%3A%28p17-api%20OR%20vendor-api%29%20-integration%5C%3Ainit%2A&agg_m=count&agg_m_source=base&agg_t=count&clustering_pattern_field_path=message&cols=%40orgName%2C%40extOrderId%2Csku%2C%40error.status%2Cerror.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&viz=stream&from_ts=1749639530346&to_ts=1749725930346&live=true"
+  },
+  {
+    "orgKey": "default-org",
+    "connectorName": "connector-3pl-amazon-sandbox",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20env%3Amaster%20service%3Aconnector-3pl-amazon-sandbox%20&cols=%40orgName%2CextOrderId%2Cerror.message&fromUser=true&index=&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&viz=stream&from_ts=1671698603739&to_ts=1671785003739&live=true"
+  },
+  {
+    "orgKey": "default-org",
+    "connectorName": "connector-3pl-davinciv3",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20functionname%3A%2Amaster%2A%20service%3Aconnector-3pl-davinciv3%20-%2Atimeout%20-%40module%3A%28vendor-api%20OR%20p17-api%29%20-integration%5C%3Ainit%2A%20-auth%2A%20-%28%40error.status%3A%3E%3D500%20AND%20%28locations%2A%20OR%20inventory%2A%20OR%20%22receipts%3Apoll%3Afailed%22%20OR%20%22fulfillments%3Apoll%3Afailed%22%20OR%20%22fulfillments%3Apoll%3Ashipment%3Afetch%3Afailed%22%29%29%20-%22fulfillments%3Apoll%3Ashipment%3Alpn%3Atracking%22%20-%22fulfillments%3Apoll%3Ashipment%3Aparcel%3Atracking%22%20-UNCOMMENT_ASAP%20-%28%40error.failure.code%3A%3E%3D500%20fulfillments%5C%3Apoll%2A%29&agg_m=count&agg_m_source=base&agg_t=count&clustering_pattern_field_path=message&cols=%40orgName%2C%40extOrderId%2C%40ediId%2Csku%2C%40error.status%2Cerror%5B0%5D.message%2Cerror.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&view=spans&viz=stream&from_ts=1751116868143&to_ts=1751203268143&live=true"
+  },
+  {
+    "orgKey": "default-org",
+    "connectorName": "connector-ecomm-apparelmagic",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20functionname%3A%2Amaster%2A%20service%3Aconnector-ecomm-apparelmagic%20-%28%2Atimeout%20%2Amain%2A%29%20-%22Task%20timed%20out%22%20-integration%2Ainit%2A%20-%40module%3Ap17-api%20-locations%2A%20-%28%40error.status%3A%3E%3D500%20AND%20%28%22orders%3Apoll%3Afailed%22%20OR%20%22shipments%3Apoll%3Afailed%22%20OR%20%22products%3Apoll%3Afailed%22%29%29%20-%28%40error.status%3A500%20AND%20%28%22orders%3Apoll%3Aitem%3Aextra%3Afailed%22%20OR%20%22orders%3Apoll%3Aitem%3Apick%3Aresolve%3Afailed%22%20OR%20%22fulfillments%3Aapply%3Acustomer%3Aresolve%3Afailed%22%20OR%20%22fulfillments%3Aapply%3Apick%3Aresolve%3Afailed%22%20OR%20%22fulfillments%3Aapply%3Apick%3Afulfill%3Afailed%22%20OR%20%22fulfillments%3Aapply%3Apick%3Aupdate%3Afailed%22%29%29%20-%28%22shipments%3Apoll%3Aitem%3Afailed%22%20AND%20%40error.failure.code%3A409%29%20-%40error.failure.errors%3A%22%27shipByDate%27%20can%20not%20be%20updated%20for%20current%20shipment%20state%22&agg_m=count&agg_m_source=base&agg_t=count&cols=%40orgName%2C%40extOrderId%2Csku%2C%40error.status%2C%40error.failure.code%2C%40error.failure.message%2Cerror.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&view=spans&viz=stream&from_ts=1751115514611&to_ts=1751201914611&live=true"
+  },
+  {
+    "orgKey": "default-org",
+    "connectorName": "connector-3pl-mochila",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20functionname%3A%2Amaster%2A%20service%3Aconnector-3pl-mochila%20-%28%2Atimeout%20%2Amain%2A%29%20-%22timed%20out%22%20-%40module%3A%28vendor-api%20OR%20p17-api%29%20-integration%5C%3Ainit%2A%20-Integration%5C%20%2A%5C%20not%5C%20found%20-%22Failed%20to%20resolve%20products%20UPCs%22%20-%28%28%22fulfillments%3Apoll%3Aitems%3Aresolve%3Afailed%22%20OR%20%22returns%3Aapply%3Afailed%22%29%20%40error.failure.code%3A500%29%20-%40error.failure.response.text%3A%2AorderId%5C%20contains%5C%20invalid%5C%20characters%2A%20-%40error.failure.response.text%3A%2Awhere%5C%20itemType.getItemValue%5C%20%5C%21%3D%5C%20null%2A%20-%40error.failure.response.text%3A%2AA%5C%20set%5C%20can%5C%20only%5C%20contain%5C%20a%5C%20UPC%5C%20only%5C%20once%2A&agg_m=count&agg_m_source=base&agg_t=count&clustering_pattern_field_path=message&cols=%40orgName%2C%40extOrderId%2C%40error.failure.code%2C%40error.failure.response.text%2Cerror.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&view=spans&viz=stream&from_ts=1754211134389&to_ts=1754297534389&live=true"
+  },
+  {
+    "orgKey": "OG Smoke",
+    "connectorName": "connector-ecomm-vend",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20env%3Amaster%20service%3Aconnector-ecomm-vend%20-%40orgName%3A%22OG%20Smoke%22%20&cols=%40orgName%2C%40error.status%2C%40error.failure.code%2C%40extPurchaseId%2C%40error.message&fromUser=true&index=&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&viz=stream&from_ts=1690188293163&to_ts=1690274693163&live=true"
+  },
+  {
+    "orgKey": "OG Smoke",
+    "connectorName": "connector-ecomm-vend",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20env%3Amaster%20service%3Aconnector-ecomm-vend%20-%40orgName%3A%22OG%20Smoke%22&agg_m=count&agg_m_source=base&agg_t=count&cols=%40orgName%2C%40error.status%2C%40error.failure.code%2C%40extPurchaseId%2C%40error.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&viz=stream&from_ts=1690188293163&to_ts=1690274693163&live=true"
+  },
+  {
+    "orgKey": "Verb Technology Company Inc",
+    "connectorName": "connector-ecomm-shopify",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20functionname%3A%2Amaster%2A%20service%3Aconnector-ecomm-shopify%20-%2Atimeout%20-%40module%3A%28p17-api%20OR%20vendor-api%29%20-%28%28%22schema.pipe17.com%22%20OR%20%40error.failure.code%3A429%29%20AND%20integration%2A%29%20-integration%5C%3Ainit%2A%20-locations%2A%20-products%2A%20-inventory%2A%20-%22statements%3Apoll%3Afailed%22%20-%40error.failure.code%3A423%20-%22Shopify%20internal%20error%22%20-ECONNRESET%20-ETIMEDOUT%20-UNCOMMENT_ASAP%20-%22fulfillments%3Aapply%3Askip%3Aunfulfilled%22%20-%28%40extOrderApiId%3A5297703551018%20404%29%20-%22orders%3Aapply%3Acancel%3Astatus_mismatch%22%20-%28%22Payment%20required%22%20%40orgName%3A%22Verb%20Technology%20Company%20Inc%22%29%20-%28%2Aname%2A%20%22can%27t%20be%20blank%22%29%20-%28%28%2APhone%2A%20OR%20%2Aphone%2A%29%20%28%22is%20invalid%22%20OR%20%22has%20already%20been%20taken%22%29%29%20-%28%22The%20api_client%20does%20not%20have%20access%20to%20the%20fulfillment%20order%22%20%40orgName%3A%22Wyze%20Labs%20Inc.%22%29&agg_m=count&agg_m_source=base&agg_t=count&clustering_pattern_field_path=message&cols=%40orgName%2C%40extOrderId%2C%40error.response.code%2C%40error.failure.code%2Cerror.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&view=spans&viz=stream&from_ts=1753775022359&to_ts=1753861422359&live=true"
+  },
+  {
+    "orgKey": "default-org",
+    "connectorName": "connector-ecomm-shopify",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20functionname%3A%2Amaster%2A%20service%3Aconnector-ecomm-shopify%20-%2Atimeout%20-%40error.failure.message%3A%2ADuplicate%5C%20key%2A%20-%40module%3A%28p17-api%20OR%20vendor-api%29%20-%22Shopify%20internal%20error%22%20-%28%22Received%20an%20error%20response%22%20AND%20ECONNRESET%29%20%28products%2A%20OR%20inventory%2A%20OR%20%28integration%2A%20AND%20%40args.entityTypes%3Aproducts%29%29%20-%28%40error.failure.code%3A429%20integration%2A%29%20-%22schema.pipe17.com%22%20-%22products%3Apoll%3Afailed%22%20-%2AThe%5C%20variant%5C%20%2A%5C%20already%5C%20exists%2A%20-%22You%20need%20to%20add%20option%20values%22%20-%22could%20not%20update%20options%20to%20%5B%5D%22%20-%22could%20not%20delete%20option%20because%20it%20has%20more%20than%201%20value%22%20-%22Option%20values%20provided%20for%201%20unknown%20option%28s%29%22%20-%22can%27t%20be%20blank%22%20-%22Exceeded%20maximum%20number%20of%20variants%20allowed%22%20-%22products%3Aapply%3Aparent%3Avariant%3Auncompleted%22%20-%22products%3Aapply%3Aparent%3Avariant%3Aduplicated%22%20-%22products%3Aapply%3Achild%3Amulti_parent%22%20-%22products%3Aapply%3Achild%3Avariant%3Aunsafe%22%20-%22products%3Aapply%3Achild%3Avariant%3Auncompleted%22%20-%2Aunsafe%20-Xinventory%2A%20-%40error.message%3A%28%22The%20delta%20can%27t%20be%20higher%20than%202%2C000%2C000%2C000%20and%20the%20total%20quantity%20can%27t%20exceed%201%2C000%2C000%2C000.%22%20OR%20%22The%20specified%20inventory%20item%20is%20not%20allowed%20to%20be%20adjusted%20via%20API.%20Example%3A%20if%20the%20inventory%20item%20is%20a%20parent%20bundle.%22%29&agg_m=count&agg_m_source=base&agg_t=count&cols=%40orgName%2C%40sku%2C%40error.response.code%2C%40error.failure.code%2Cerror.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&view=spans&viz=stream&from_ts=1747295146235&to_ts=1747381546235&live=true"
+  },
+  {
+    "orgKey": "AV Production",
+    "connectorName": "connector-rma-loop",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20functionname%3A%2Amaster%2A%20service%3Aconnector-rma-loop%20-%2Atimeout%20-%40module%3A%28p17-api%20OR%20vendor-api%29%20-integration%5C%3Ainit%2A%20-%28%22items%20is%20not%20iterable%22%20%40orgName%3A%22AV%20Production%22%29%20-%28%40error.parsed.errors%3AUnauthorized.%20products%5C%3Aapply%2A%20%40orgName%3A%22ProCaps%20Laboratories%20-%20Sandbox%22%29&agg_m=count&agg_m_source=base&agg_t=count&clustering_pattern_field_path=message&cols=%40orgName%2C%40extOrderId%2C%40error.status%2C%40error.failure.code%2C%40error.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&viz=stream&from_ts=1751356077491&to_ts=1751442477491&live=true"
+  },
+  {
+    "orgKey": "default-org",
+    "connectorName": "connector-3pl-shipwire",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20functionname%3A%2Amaster%2A%20service%3Aconnector-3pl-shipwire%20-%28%2Atimeout%20%2Amain%2A%29%20-%40module%3A%28p17-api%20OR%20vendor-api%29%20-integration%5C%3Ainit%2A%20-%40XorgName%3A%22Automation%20Test%22&agg_m=count&agg_m_source=base&agg_t=count&cols=%40orgName%2C%40extOrderId%2C%40error.failure.code%2Cerror.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&viz=stream&from_ts=1747813466455&to_ts=1747899866455&live=true"
+  },
+  {
+    "orgKey": "default-org",
+    "connectorName": "connector-3pl-infoplus",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20functionname%3A%2Amaster%2A%20service%3Aconnector-3pl-infoplus%20-%28%2Atimeout%20%2Amain%2A%29%20-%40module%3A%28p17-api%20OR%20vendor-api%29%20-locations%2A%20-integration%5C%3Ainit%2A%20-%40Xerror.failure.message%3A%22Not%20authorized%22%20-%22receipts%3Apoll%3Afailed%22%20-%22inventory%3Apoll%3Afailed%22%20-%28%40error.httpStatus%3A502%20AND%20%28integration%2A%20OR%20lob%2A%29%29%20-%22XSpecified%20Line%20of%20Business%20not%20found%22%20-%22Xshipments%3Aapply%3Acustomer%3Amissed%22&agg_m=count&agg_m_source=base&agg_t=count&cols=%40orgName%2C%40extOrderId%2C%40sku%2C%40extArrivalId%2C%40error.httpStatus%2Cerror.errors%5B0%5D%2Cerror.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&viz=stream&from_ts=1744879115656&to_ts=1744965515656&live=true"
+  },
+  {
+    "orgKey": "default-org",
+    "connectorName": "connector-rma-returnly",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20env%3Amaster%20service%3Aconnector-rma-returnly%20&cols=%40orgName%2C%40error.status%2C%40extOrderId%2C%40error&fromUser=true&index=&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&viz=stream&from_ts=1664750880213&to_ts=1664837280213&live=true"
+  },
+  {
+    "orgKey": "default-org",
+    "connectorName": "connector-rma-returnly",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20env%3Amaster%20service%3Aconnector-rma-returnly&agg_m=count&agg_m_source=base&agg_t=count&cols=%40orgName%2C%40error.status%2C%40extOrderId%2C%40error&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&viz=stream&from_ts=1664750880213&to_ts=1664837280213&live=true"
+  },
+  {
+    "orgKey": "default-org",
+    "connectorName": "connector-ecomm-thg",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20env%3Amaster%20service%3Aconnector-ecomm-thg%20-%2Atimeout%20-%40module%3Avendor-api%20-integration%5C%3Ainit%2A%20-UNCOMMENT_FOR_ERRORS%20-%28%22inventory%3Aapply%3Afailed%22%20AND%20%40error.json%3ABarcode%5C%20%2A%5C%20returned%5C%20product%5C%20ID%5C%20list%5C%20size%5C%20of%5C%200%29&agg_m=count&agg_m_source=base&agg_t=count&cols=%40orgName%2C%40extOrderId%2C%40sku%2C%40error.status%2C%40error.httpStatus%2C%40error.json%2Cerror.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&view=spans&viz=stream&from_ts=1731311061991&to_ts=1731397461991&live=true"
+  },
+  {
+    "orgKey": "Kinimatic - Sandbox account",
+    "connectorName": "connector-ecomm-tiktok",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20functionname%3A%2Amaster%2A%20service%3Aconnector-ecomm-tiktok%20-%28%2Atimeout%20%2Amain%2A%29%20-%22Task%20timed%20out%22%20-%40module%3A%28p17-api%20OR%20vendor-api%29%20-locations%2A%20-integration%5C%3Ainit%2A%20-%28request%20AND%20integration%2A%29%20-%22integration%20with%20shopId%22%20-%28%28%40error.status%3A%3E%3D500%20OR%20%22System%20error%22%20OR%20%22Service%20Unavailable%22%20OR%20%22timed%20out%22%29%20%28integration%2A%20OR%20vendor%2A%20OR%20product%2A%20OR%20inventory%2A%20OR%20returns%2A%20OR%20refunds%2A%29%29%20-%22orders%3Alist%3Afailed%22%20-%22401%20You%20do%20not%20have%20access%20to%20the%20project%22%20-%28%22Duplicate%20key%22%20products%2A%29%20-%22You%20can%20not%20use%20duplicate%20attribute%22%20-%22The%20following%20product%20attribute%20is%20missing%22%20-%22product%20status%20invalid%22%20-%22Product%20price%20locked%22%20-%22product%20pre%20check%20got%20errors%22%20-%22Product%20variation%20option%22%20-%22The%20width%20and%20length%20of%20the%20following%20product%22%20-%22Each%20SKU%20must%20include%20the%20same%20number%22%20-SKU%5C%20ID%5C%20%2A%5C%20not%5C%20found%20-Attribute%5C%20%5C%22%2A%5C%22%5C%20not%5C%20found%20-Variant%5C%20Option%5C%20%2A%5C%20does%5C%20not%5C%20match%5C%20Parent%5C%20Variant%5C%20Options%2A%20-%22Expired%20promotions%20cannot%20be%20edited%22%20-%22Total%20quantity%20of%20pre-owned%20products%22%20-%22SKU%20discount%20is%20below%20the%20limit%22%20-%22Main%20image%20missing%20for%20variants%22%20-%22sku%20id%20is%20invalid%22%20-%22sku%20count%20must%20be%20one%20and%20disable%20variables%22%20-%22Can%27t%20change%20category%20of%20pre-owned%20products%22%20-%22Non-error%20was%20thrown%22%20-%28%28%22Warehouse%20unavailable%22%20OR%20The%5C%20warehouse%5C%20%2A%5C%20is%5C%20disabled%2A%29%20product%2A%29%20-%22Category%20is%20not%20final%20category%22%20-%28%22stock%20count%20is%20invalid%22%20inventory%2A%29%20-%28%22warehouse%20status%20invalid%22%20inventory%2A%29%20-%22product%3Aapply%3Adeactivate_on_update%3Afailed%22%20-%22fulfillments%3Asubmit%3Ashipping_carrier_match%3Afailed%22%20-%22fulfillments%3Asubmit%3Amarked_as_shipped%3Afailed%22%20-%22fulfillments%3Asubmit%3Aresolve%3Afailed%22%20-%22fulfillment%3Asubmit%3Askip%3Aincomplete%22%20-%22orders%3Alist%3Ashipping_type%3Amissing%22%20-%28integration%2A%20%40orgName%3A%22Kinimatic%20-%20Sandbox%20account%22%29%20-%22ShopId%207496146618456050616%20not%20authorized%22%20-%40error.failure.errors%3A%22lineItems%5B0%5D.sku%3A%20required%20field%20does%20not%20exist%22%20-%22inventory%3Aapply%3Avendor_product%3Alist%3Aerror%22%20-%28%28%22products%3Apoll%3Aitem%3Afailed%22%20OR%20%22product%3Aapply%3Aget_attributes_failed%22%29%20%21%40error%3A%2A%29%20-%22XCannot%20read%20properties%20of%20undefined%22&agg_m=count&agg_m_source=base&agg_t=count&clustering_pattern_field_path=message&cols=%40orgName%2C%40extOrderId%2Csku%2Cerror.code%2C%40error.status%2C%40error.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&viz=stream&from_ts=1750597030825&to_ts=1750683430825&live=true"
+  },
+  {
+    "orgKey": "default-org",
+    "connectorName": "connector-3pl-whiplash",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20functionname%3A%2Amaster%2A%20service%3Aconnector-3pl-whiplash%20-%2Atimeout%20-%40module%3A%28p17-api%20OR%20vendor-api%29%20-integration%5C%3Ainit%2A%20-locations%2A%20-%40error.response.error%3A%22Scancode%20has%20already%20been%20taken%22%20-%28%22fulfillments%3Aevent%3Apackage%3Aapply%3Afailed%22%20%40error.failure.fulfillments.conflict.extFulfillmentId%3A%2A%29%20-%28%22shipments%3Aapply%3Aitems%3Aresolve%3Afailed%22%20%22Failed%20to%20resolve%20products%22%29%20-%28%40error.failure.message%3A%22Failed%20to%20update%20product%3A%20Duplicate%20key%20error%22%20%22products%3Aapply%3Alink%3Afailed%22%29%20-%28%40error.status%3A409%20%22products%3Aapply%3Afailed%22%29%20-UNCOMMENT_ASAP%20-%40error.failure.errors%3AReceipt%5C%20%2A%5C%20was%5C%20reported%5C%20already%20-%28%28%22fulfillments%3Apoll%3Aitem%3Aresolve%3Afailed%22%20OR%20receipts%5C%3Apoll%5C%3Aitem%2A%29%20%22Rate%20Limit%20Exceeded%22%29%20-%28%22returns%3Aapply%3Afailed%22%20shipnotice_items_attributes%5C%5B%2A%5C%5D%5C%5Bitem_id%5C%5D%2Amissing%2A%29%20-%28%22fulfillments%3Aevent%3Astatus%3Afailed%22%20%22Version%20conflict%22%29%20-%28%22fulfillments%3Apoll%3Aitem%3Apackage%3Afailed%22%20%40error.failure.code%3A409%29%20-%28%22webhook%3Aregister%3Afailed%22%20%40orgName%3ARyder%2A%29&agg_m=count&agg_m_source=base&agg_t=count&clustering_pattern_field_path=message&cols=%40orgName%2C%40extOrderId%2C%40sku%2C%40extArrivalId%2C%40error.status%2C%40error.failure.code%2Cerror.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&view=spans&viz=stream&from_ts=1754851191753&to_ts=1754937591753&live=true"
+  },
+  {
+    "orgKey": "default-org",
+    "connectorName": "connector-3pl-peoplevox",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20env%3Amaster%20service%3Aconnector-3pl-peoplevox%20-%22Cannot%20read%20property%20%27TrackingNumber%27%20of%20undefined%22%20-%22System%20Exception%20-%20An%20unhandled%20exception%20has%20occured%22%20-%40module%3Avendor-api&cols=%40orgName%2C%40error.statusCode%2C%40extOrderId%2C%40error.message&fromUser=true&index=&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&viz=stream&from_ts=1675844916338&to_ts=1675931316338&live=true"
+  },
+  {
+    "orgKey": "default-org",
+    "connectorName": "connector-3pl-peoplevox",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20env%3Amaster%20service%3Aconnector-3pl-peoplevox%20-%22Cannot%20read%20property%20%27TrackingNumber%27%20of%20undefined%22%20-%22System%20Exception%20-%20An%20unhandled%20exception%20has%20occured%22%20-%40module%3Avendor-api&agg_m=count&agg_m_source=base&agg_t=count&cols=%40orgName%2C%40error.statusCode%2C%40extOrderId%2C%40error.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&viz=stream&from_ts=1675844916338&to_ts=1675931316338&live=true"
+  },
+  {
+    "orgKey": "default-org",
+    "connectorName": "connector-ecomm-inventory-planner",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20env%3Amaster%20service%3Aconnector-ecomm-inventory-planner%20-%40module%3A%28p17-api%20OR%20vendor-api%29%20-integration%5C%3Ainit%2A%20&cols=%40orgName%2C%40extOrderId%2Csku%2C%40error.failure.code%2C%40error.failure.message%2Cerror.message&fromUser=true&index=&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&viz=stream&from_ts=1707489973925&to_ts=1707576373925&live=true"
+  },
+  {
+    "orgKey": "default-org",
+    "connectorName": "connector-ecomm-inventory-planner",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20env%3Amaster%20service%3Aconnector-ecomm-inventory-planner%20-%40module%3A%28p17-api%20OR%20vendor-api%29%20-integration%5C%3Ainit%2A&agg_m=count&agg_m_source=base&agg_t=count&cols=%40orgName%2C%40extOrderId%2Csku%2C%40error.failure.code%2C%40error.failure.message%2Cerror.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&viz=stream&from_ts=1707489973925&to_ts=1707576373925&live=true"
+  },
+  {
+    "orgKey": "default-org",
+    "connectorName": "connector-ecomm-channeladvisor",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20functionname%3A%2Amaster%2A%20service%3Aconnector-ecomm-channeladvisor%20-%28%2Atimeout%20%2Amain%2A%29%20-%40module%3A%28p17-api%20OR%20vendor-api%29%20-integration%5C%3Ainit%2A&agg_m=count&agg_m_source=base&agg_t=count&clustering_pattern_field_path=message&cols=%40orgName%2C%40extOrderId%2Csku%2C%40error.status%2Cerror.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&view=spans&viz=stream&from_ts=1748286126846&to_ts=1748372526846&live=true"
+  },
+  {
+    "orgKey": "default-org",
+    "connectorName": "connector-ecomm-fulfilio",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20functionname%3A%2Amaster%2A%20service%3Aconnector-ecomm-fulfilio%20-%28%2Atimeout%20%2Amain%2A%29%20-%28%2Amain%2A%20%2Atimeout%29%20-integration%5C%3Ainit%2A%20-%40module%3A%28vendor-api%20OR%20p17-api%29%20-%40orgName%3AT20241127%20-%28%22orders%3Apoll%3Afailed%22%20%40error.status%3A429%29%20-%22inventory%3Aapply%3Aproduct%3Aresolve%3Aunmapped%22%20-%40error.details.message%3A%22You%20can%27t%20make%20any%20changes%20to%20this%20shipment%2C%20since%20it%27s%20currently%20on%20hold.%20To%20move%20this%20shipment%20along%2C%20remove%20the%20hold%20first.%22&agg_m=count&agg_m_source=base&agg_t=count&clustering_pattern_field_path=message&cols=%40orgName%2C%40extOrderId%2Csku%2C%40error.status%2C%40error.failure.code%2Cerror.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&view=spans&viz=stream&from_ts=1754132649858&to_ts=1754219049858&live=true"
+  },
+  {
+    "orgKey": "default-org",
+    "connectorName": "connector-3pl-logiwa",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20functionname%3A%2Amaster%2A%20service%3Aconnector-3pl-logiwa%20-%2Atimeout%20-%40module%3A%28p17-api%20OR%20vendor-api%29%20-integration%5C%3Ainit%2A%20-%28%22HTTP%20404%22%20AND%20%28integration%2A%20OR%20%22inventory%3Apoll%3Apage%3Afailed%22%20OR%20%22receipts%3Apoll%3Aitems%3Afailed%22%29%29%20-%40orgName%3AT20221012%20-%28%28%22fulfillments%3Apoll%3Aitems%3Afailed%22%20OR%20%22fulfillments%3Apoll%3Aorder%3Aresolve%3Afailed%22%29%20AND%20%22502%20Bad%20Gateway%22%29%20-%28%40error.status%3A%3E%3D500%20AND%20%28integration%2A%20OR%20%22shipments%3Aapply%3Afailed%22%29%29%20-%22inventory%3Apoll%3Apage%3Along%3Arestart%22%20-%22inventory%3Apoll%3Afailed%22%20-%22fulfillments%3Apoll%3Afailed%22%20-%22Value%20cannot%20be%20null.%20Parameter%20name%3A%20value%22%20-%40mode%3Ascan%20-UNCOMMENT_ASAP%20-%28%22API%20Call%20failed%22%20%22shipments%3Aapply%3Afailed%22%29%20-%22Item%20cannot%20be%20found%20or%20does%20not%20belong%20to%20this%20client%22&agg_m=count&agg_m_source=base&agg_t=count&clustering_pattern_field_path=message&cols=%40orgName%2C%40extOrderId%2C%40sku%2C%40error.status%2C%40error.text%2Cerror.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&view=spans&viz=stream&from_ts=1751356077491&to_ts=1751442477491&live=true"
+  },
+  {
+    "orgKey": "default-org",
+    "connectorName": "connector-ecomm-commercehub",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20env%3Amaster%20service%3Aconnector-ecomm-commercehub%20-%28%2Atimeout%20%2Amain%2A%29%20-%40module%3A%28p17-api%20OR%20vendor-api%29%20-integration%5C%3Ainit%2A%20-locations%2A%20-%22orders%3Apoll%3Afailed%22%20-%28%40error.failure.message%3A%22Duplicate%20key%20error%22%20AND%20products%2A%29%20-%40error.messages.description%3A%28%22At%20least%20one%20of%20these%20fields%20must%20be%20defined%3A%20upc%2C%20ean%22%20OR%20%22At%20least%20one%20of%20these%20fields%20must%20be%20defined%3A%20ean%2C%20gtin%2C%20upc%22%20OR%20%22Missing%20required%20field%3A%20upc%22%20OR%20%22XMissing%20required%20field%3A%20warehouseCode%22%20OR%20XInvalid%5C%20fedexFEHD%5C%20shipping%5C%20method%2A%29&agg_m=count&agg_m_source=base&agg_t=count&clustering_pattern_field_path=message&cols=%40orgName%2C%40extOrderId%2Csku%2C%40error.status%2C%40error.failure.code%2Cerror.messages%5B0%5D.description%2Cerror.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&view=spans&viz=stream&from_ts=1741431047034&to_ts=1741517447034&live=true"
+  },
+  {
+    "orgKey": "default-org",
+    "connectorName": "connector-ecomm-prestashop",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20env%3Amaster%20service%3Aconnector-ecomm-prestashop%20&cols=%40orgName%2C%40extOrderId%2C%40error.status%2C%40sku%2C%40error.failure.code%2Cerror.message&fromUser=true&index=&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&viz=stream&from_ts=1688632608980&to_ts=1688719008980&live=true"
+  },
+  {
+    "orgKey": "default-org",
+    "connectorName": "connector-ecomm-prestashop",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20env%3Amaster%20service%3Aconnector-ecomm-prestashop&agg_m=count&agg_m_source=base&agg_t=count&cols=%40orgName%2C%40extOrderId%2C%40error.status%2C%40sku%2C%40error.failure.code%2Cerror.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&viz=stream&from_ts=1688632608980&to_ts=1688719008980&live=true"
+  },
+  {
+    "orgKey": "default-org",
+    "connectorName": "connector-3pl-osa",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20functionname%3A%2Amaster%2A%20service%3Aconnector-3pl-osa%20-%2Atimeout%20-%40module%3A%28vendor-api%20OR%20p17-api%29%20-integration%5C%3Ainit%2A%20-%22fulfillments%3Apoll%3Afailed%22%20-%22receipts%3Apoll%3Afailed%22%20-locations%2A%20-%28%40orgName%3A%28%22Monica%20%26%20Andy%22%20OR%20EIS-Inc%20OR%20%2A%29%20AND%20%28%40error.details.messages%3A%28Invalid%5C%20store%5C%20prefix%2A%20OR%20Invalid%5C%20Country%5C%20provided%2A%20OR%20Invalid%5C%20address%5C%20in%2A%20OR%20Invalid%5C%20StateProvince%5C%20provided%2A%29%20OR%20%40error.details.%3ARequired%5C%20property%2A%20OR%20%40error.details.FirstName%3A%22The%20FirstName%20field%20is%20required.%22%20OR%20%40error.details.LastName%3A%22The%20LastName%20field%20is%20required.%22%29%29%20-%22shipment%3Aapply%3Acancel%3Afailed%22%20-%40error.details.AddressInfo.FromPhoneNumber%3AThe%5C%20FromPhoneNumber%5C%20field%5C%20is%5C%20required%2A%20-%40error.details.messages%3ASku%5C%20provided%5C%20in%5C%20OrderNumber%2Anot%5C%20found%2A%20-UNCOMMENT_THIS_ASAP%20-%28%40error.status%3A400%20%22inventory%3Apoll%3Afailed%22%29&agg_m=count&agg_m_source=base&agg_t=count&cols=%40orgName%2C%40extOrderId%2C%40extShipmentId%2C%40error.status%2C%40error.failure.code%2Cerror.details%2Cerror.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&view=spans&viz=stream&from_ts=1745003444471&to_ts=1745089844471&live=true"
+  },
+  {
+    "orgKey": "default-org",
+    "connectorName": "connector-bi-amazons3",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20env%3Amaster%20service%3Aconnector-bi-amazons3%20-%22Task%20timed%20out%22%20-%22The%20AWS%20Access%20Key%20Id%20you%20provided%20does%20not%20exist%20in%20our%20records.%22%20&additional_filters=%5B%7B%7D%5D&cols=%40orgName%2C%40extOrderId%2C%40error.Code%2Cerror.message&fromUser=true&index=&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&viz=stream&from_ts=1700552468169&to_ts=1700638868169&live=true"
+  },
+  {
+    "orgKey": "default-org",
+    "connectorName": "connector-3pl-email",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20env%3Amaster%20service%3Aconnector-3pl-email%20-%40module%3Avendor-api%20-%40connectorName%3A4bf408c5a1e83e97&agg_m=count&agg_m_source=base&agg_t=count&cols=%40orgName%2C%40extOrderId%2C%40error.code%2C%40error.failure.code%2C%40error.response.body.errors%5B0%5D.message%2Cerror.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&view=spans&viz=stream&from_ts=1719554100305&to_ts=1719597300305&live=true"
+  },
+  {
+    "orgKey": "default-org",
+    "connectorName": "connector-erp-salesforce",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20env%3Amaster%20service%3Aconnector-erp-salesforce%20-%28%2Atimeout%20%2Amain%2A%29%20-%40module%3A%28p17-api%20OR%20vendor-api%29%20-integration%5C%3Ainit%2A%20-%22required%20apiOrganizationId%20not%20specified%22%20-%28%22https%3A%2F%2Fschema.pipe17.com%2Fconvert%22%20AND%20%28integration%2A%20OR%20inventory%2A%29%29%20-%40Xerror.fault.message%3A%22Access%20to%20resource%20%27GET%20%2Fdata%2Fv23_2%2Fsites%27%20isn%27t%20allowed%20for%20the%20current%20user.%22%20-%40Xerror.fault.message%3AProduct%5C%20%2A%5C%20is%5C%20unknown%2C%5C%20offline%2A&agg_m=count&agg_m_source=base&agg_t=count&cols=%40orgName%2C%40extOrderId%2C%40sku%2C%40error.status%2C%40error.title%2Cerror.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&view=spans&viz=stream&from_ts=1735989987662&to_ts=1736076387662&live=true"
+  },
+  {
+    "orgKey": "default-org",
+    "connectorName": "connector-3pl-bergen",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20functionname%3A%2Amaster%2A%20service%3Aconnector-3pl-bergen%20-%28%2Atimeout%20%2Amain%2A%29%20-%40module%3Avendor-api%20-%22XToken%20refresh%20required%22%20-integration%5C%3Ainit%2A%20-%28%22Authentication%20error%22%20%28%22integration%3Amain%3Afailed%22%20OR%20%22products%3Aapply%3Afailed%22%20OR%20%22returns%3Apoll%3Areturn%3Aresolve%3Afailed%22%29%29%20-%22Xfulfillments%3Apoll%3Ashipment%3Amissed%22&agg_m=count&agg_m_source=base&agg_t=count&clustering_pattern_field_path=message&cols=%40orgName%2C%40extOrderId%2C%40sku%2Cerror.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&view=spans&viz=stream&from_ts=1753861484494&to_ts=1753947884494&live=true"
+  },
+  {
+    "orgKey": "default-org",
+    "connectorName": "connector-ecomm-netsuite",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20functionname%3A%2Amaster%2A%20service%3Aconnector-ecomm-netsuite%20-%28%2Atimeout%20%2Amain%2A%29%20-%22Task%20timed%20out%22%20-%40module%3A%28p17-api%20OR%20vendor-api%29%20-integration%5C%3Ainit%2A%20-locations%2A%20-%28%22Connectivity%20check%20failed%22%20integration%2A%29%20-%22products%3Apoll%3Afailed%22%20-%28%2Apoll%2A%20%2Ait%2A%20%2Afailed%29%20-%28%28%22Duplicate%20key%20error%22%20OR%20%22Search%20is%20not%20succeeded%22%20OR%20%22Search%20failed%22%29%20products%2A%29%20-%22Please%20configure%20the%20inventory%20detail%22%20-%40error.message%3AInvalid%5C%20item%5C%20reference%5C%20key%2A%20-%22Invalid%20issueinventorynumber%20reference%20key%22%20-%22SuiteTalk%20concurrent%20request%20limit%20exceeded%22%20-%22Cannot%20read%20properties%20of%20undefined%20%28reading%20%27reduce%27%29%22%20-%40error.details.o%5C%3AerrorDetails.detail%3A%5CConcurrent%5C%20request%5C%20limit%5C%20exceeded%2A%20-%40error.details.o%5C%3AerrorDetails.detail%3AInvalid%5C%20login%5C%20attempt%2A%20-%22You%20have%20an%20invalid%20sales%20order%22%20-%22You%20must%20enter%20at%20least%20one%20line%20item%22%20-%22You%20must%20have%20at%20least%20one%20valid%20line%20item%20for%20this%20transaction%22%20-%22You%20only%20have%201%20available.%20Please%20enter%20a%20different%20quantity.%22%20-%22Unable%20to%20find%20a%20matching%20line%20for%20sublist%20item%22%20-%22Invalid%20location%20reference%20key%22%20-%22Get%20soap%20record%20error%22%20-%22Record%20has%20been%20changed%22%20-%22Runtime%20exited%20with%20error%3A%20signal%3A%20killed%22%20-%22The%20following%20Inventory%20numbers%20are%20not%20available%22%20-%22Please%20enter%20value%28s%29%20for%3A%20Sales%20Channel%22%20-%22Fulfillments%20can%20be%20shipped%20from%20only%20one%20location%22%20-%22Customer%20is%2024%20days%20overdue%22%20-%22The%20total%20inventory%20detail%20quantity%20must%20be%22%20-%22Please%20provide%20values%20for%20the%20following%20fields%20in%20the%20Items%20list%22%20-%22That%20record%20does%20not%20exist%22%20-%22Invalid%20customform%20reference%20key%22%20-Customer%5C%20is%5C%20%2A%5C%20days%5C%20overdue%2A%20-%22XSearch%20is%20not%20succeeded%22&agg_m=count&agg_m_source=base&agg_t=count&clustering_pattern_field_path=message&cols=%40orgName%2CextOrderId%2Csku%2C%40error.status%2C%40error.failure.code%2Cerror.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&view=spans&viz=stream&from_ts=1750405561979&to_ts=1750664761979&live=true"
+  },
+  {
+    "orgKey": "default-org",
+    "connectorName": "connector-3pl-deposco",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20functionname%3A%2Amaster%2A%20service%3Aconnector-3pl-deposco%20-%28%2Atimeout%20%2Amain%2A%29%20-%40module%3Avendor-api%20-integration%5C%3Ainit%2A%20-locations%2A%20-%28%40error.status%3A429%20fulfillments%5C%3Apoll%5C%3Ashipment%2A%20%2Aresolve%2A%29%20-UNCOMMENT_ASAP%20-%22fulfillments%3Apoll%3Ashipment%3Amissed%22%20-Duplicate%5C%20entry%5C%20%2A%5C%20for%5C%20key%5C%20%27ITEM_UPC.UNQ_UPC_COMPANY%27%20-Upc%5C%20%2A%5C%20already%5C%20exists%5C%20in%5C%20Deposco%2A%20-%28%22Duplicate%20key%20error%22%20shipping%5C%3Amethods%2A%29%20-%22Column%20%27ITEM_ID%27%20cannot%20be%20null%22&agg_m=count&agg_m_source=base&agg_t=count&analyticsOptions=%5B%22bars%22%2C%22dog_classic%22%2Cnull%2Cnull%2C%22value%22%5D&clustering_pattern_field_path=message&cols=%40orgName%2C%40extOrderId%2C%40sku%2C%40error.status%2C%40error.text%2Cerror.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&view=spans&viz=stream&from_ts=1754743250043&to_ts=1754829650043&live=true"
+  },
+  {
+    "orgKey": "default-org",
+    "connectorName": "connector-ecomm-commercetools",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20functionname%3A%2Amaster%2A%20service%3Aconnector-ecomm-commercetools%20-%28%2Atimeout%20%2Amain%2A%29%20-%40module%3A%28p17-api%20OR%20vendor-api%29%20-integration%5C%3Ainit%2A&agg_m=count&agg_m_source=base&agg_t=count&cols=%40orgName%2C%40extOrderId%2C%40sku%2C%40error.status%2C%40error.failure.code%2Cerror.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&viz=stream&from_ts=1746006989514&to_ts=1746093389514&live=true"
+  },
+  {
+    "orgKey": "default-org",
+    "connectorName": "connector-edi-sps-ftp",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20functionname%3A%2Amaster%2A%20service%3Aconnector-edi-sps-ftp%20-%28%2Atimeout%20%2Amain%2A%29%20-%22Task%20timed%20out%22%20-%40module%3A%28p17-api%20OR%20vendor-api%29%20-integration%5C%3Ainit%2A%20-UNCOMMENT_ASAP%20-%28%22fulfillment%3Asubmit%3Afetch%3Alocation%3Afailed%22%20%40error.failure.code%3A403%29&agg_m=count&agg_m_source=base&agg_t=count&clustering_pattern_field_path=message&cols=%40orgName%2C%40extOrderId%2Csku%2C%40error.status%2C%40error.code%2C%40error.failure.code%2C%40error.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&view=spans&viz=stream&from_ts=1748371598765&to_ts=1748457998765&live=true"
+  },
+  {
+    "orgKey": "Azalea Wang",
+    "connectorName": "connector-3pl-its",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20functionname%3A%2Amaster%2A%20service%3Aconnector-3pl-its%20-%28%2Atimeout%20%2Amain%2A%29%20-integration%5C%3Ainit%2A%20-%40module%3A%28p17-api%20OR%20vendor-api%29%20-%22inventory%3Apoll%3Afailed%22%20-UNCOMMENT_ASAP%20-%28%22fulfillments%3Apoll%3Ashipment%3Amissed%22%20%28%40orgName%3A%28%22Azalea%20Wang%22%20OR%20%22Sandbox%20-%20Mohawk%20Group%22%29%20OR%20%40extOrderId%3A%28%22%23CC133119%22%20OR%20%22%23CC133223%22%29%29%29%20-%28%22shipments%3Aapply%3Afailed%22%20%2A%3ACould%5C%20not%5C%20find%5C%20material%2A%29%20-%2A%3AThird%5C%20Party%5C%20accounts%5C%20will%5C%20not%5C%20be%5C%20used%5C%20for%5C%20rate%5C%20shopping%2A%20-%2A%3A%22The%20Zip%20field%20is%20required.%22%20-%28%28%22fulfillments%3Apoll%3Aresolve%3Afailed%22%20OR%20%22receipts%3Apoll%3Aarrival%3Aresolve%3Afailed%22%29%20%22Too%20many%20requests%22%20%40orgName%3A%22Azalea%20Wang%22%29&agg_m=count&agg_m_source=base&agg_t=count&clustering_pattern_field_path=message&cols=%40orgName%2C%40extOrderId%2C%40sku%2C%40error.status%2C%40error.payload.orderMessages%2Cerror.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&view=spans&viz=stream&from_ts=1752431399887&to_ts=1752517799887&live=true"
+  },
+  {
+    "orgKey": "default-org",
+    "connectorName": "connector-ecomm-mirakl-mp",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20env%3Amaster%20service%3Aconnector-ecomm-mirakl-mp%20-%2Atimeout%20-%40module%3A%28p17-api%20OR%20vendor-api%29%20-%28%40error.failure.message%3A%22Duplicate%20key%20error%22%20AND%20products%2A%29&agg_m=count&agg_m_source=base&agg_t=count&cols=%40orgName%2C%40extOrderId%2Csku%2C%40error.status%2C%40error.failure.code%2Cerror.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&viz=stream&from_ts=1732383554541&to_ts=1732469954541&live=true"
+  },
+  {
+    "orgKey": "default-org",
+    "connectorName": "connector-3pl-unis",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20functionname%3A%2Amaster%2A%20service%3Aconnector-3pl-unis%20-%28%2Atimeout%20%2Amain%2A%29%20-%40module%3A%28vendor-api%20OR%20p17-api%29%20-%28%28%40error.text%3A50x%20OR%20%40error.status%3A%3E%3D500%20OR%20%40error.code%3AECONNREFUSED%29%20%28%22inventory%3Apoll%3Afailed%22%20OR%20%22returns%3Apoll%3Afailed%22%20OR%20%22receipts%3Apoll%3Afailed%22%20OR%20%22fulfillments%3Apoll%3Afailed%22%29%29%20-%28%22Xshipments%3Aapply%3Acancel%3Afailed%22%20%40error.status%3A%28400%20OR%20404%29%29%20-%2Ascan%2A%20-UNCOMMENT_ASAP%20-%28%40orgName%3A%28%2ASBX%2A%20OR%20%2ASandbox%2A%29%20%2Apoll%2A%20-%2Aitem%2A%29%20-%28%22inventory%3Apoll%3Aitem%3Aaggregated%3Alist%3Afailed%22%20%40error.status%3A%3E%3D500%29%20-%28%22shipments%3Aapply%3Acancel%3Afailed%22%20%40error.status%3A400%29%20-%28%28%22shipments%3Aapply%3Alookup%3Afailed%22%20OR%20%22shipments%3Aapply%3Afailed%22%20OR%20integration%2A%29%20%28%40error.status%3A%3E%3D500%20OR%20%40error.reason%3A%22Error%3A%20Bad%20Gateway%22%29%29&agg_m=count&agg_m_source=base&agg_t=count&clustering_pattern_field_path=message&cols=%40orgName%2C%40extOrderId%2C%40sku%2C%40error.status%2C%40error.reason%2Cerror.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&view=spans&viz=stream&from_ts=1754739530297&to_ts=1754825930297&live=true"
+  },
+  {
+    "orgKey": "default-org",
+    "connectorName": "connector-3pl-pfsweb",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20env%3Amaster%20service%3Aconnector-3pl-pfsweb%20-%2Atimeout%20-%40module%3A%28p17-api%20OR%20vendor-api%29%20-%22Xclient-socket%20error%22%20-%22shipments%3Aapply%3Acancel%3Aunsupported%22%20-%40error.error.errorDescription%3AOrderNumber%5C%20%2A%5C%20Shipping%5C%20%2A%5C%20cannot%5C%20be%5C%20blanks%2A&agg_m=count&agg_m_source=base&agg_t=count&cols=%40orgName%2C%40extOrderId%2Csku%2C%40error.failure.code%2Cerror.error%5B0%5D.errorDescription%2Cerror.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&view=spans&viz=stream&from_ts=1739778455075&to_ts=1739864855075&live=true"
+  },
+  {
+    "orgKey": "Green Monkey USA",
+    "connectorName": "connector-ecomm-shipstation",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20functionname%3A%2Amaster%2A%20service%3Aconnector-ecomm-shipstation%20-%28%2Atimeout%20%2Amain%2A%29%20-%40module%3A%28p17-api%20OR%20vendor-api%29%20-integration%5C%3Ainit%2A%20-locations%2A%20-%22account%3Alisttags%3Afailed%22%20-%28%22Duplicate%20key%20error%22%20products%2A%29%20-%40error.status%3A429%20-%40error.status%3A%3E%3D500%20-%40error.failure.orders.errors%3A%28lineItems%2Asku%2Arequired%2A%20OR%20Duplicate%5C%20lineItem%5C%20uniqueId%2A%29%20-%28%22orders%3Apoll%3Aconfig%3Ainvalid%22%20%40orgName%3A%22Green%20Monkey%20USA%22%29%20-%28orders%2A%20%40orgName%3A%22EIS-Inc%22%20%22Not%20authorized%22%29&agg_m=count&agg_m_source=base&agg_q=%40orgName&agg_q_source=base&agg_t=count&analyticsOptions=%5B%22bars%22%2C%22dog_classic%22%2Cnull%2Cnull%5D&clustering_pattern_field_path=message&cols=%40orgName%2C%40extOrderId%2C%40sku%2C%40error.status%2C%40error.failure.code%2Cerror.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&top_n=10&top_o=top&view=spans&viz=stream&x_missing=true&from_ts=1753861484494&to_ts=1753947884494&live=true"
+  },
+  {
+    "orgKey": "default-org",
+    "connectorName": "connector-3pl-capacityllc",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20functionname%3A%2Amaster%2A%20service%3Aconnector-3pl-capacityllc%20-%28%2Atimeout%20%2Amain%2A%29%20-%22Task%20timed%20out%22%20-%40module%3A%28p17-api%20OR%20vendor-api%29%20-integration%5C%3Ainit%2A%20-%28%40error.status%3A500%20%22fulfillments%3Apoll%3Afailed%22%29%20-%40error.details.message%3A%28%2AProvide%5C%20Ship%5C%20business%5C%20name%5C%20or%5C%20Shipname%2A%20OR%20%2AShipMethod%5C%20can%5C%20not%5C%20be%5C%20empty%2A%20OR%20%2AShipping%5C%20zipcode%5C%20can%5C%20not%5C%20be%5C%20empty%2A%20OR%20%2AShipping%5C%20Address%5C%201%5C%20can%5C%20not%5C%20be%5C%20empty%2A%20OR%20%2AShipping%5C%20state%5C%20can%5C%20not%5C%20be%5C%20empty%2A%29%20-%28%22shipments%3Aapply%3Afailed%22%20%40error.status%3A500%20%21%40internal.retry%3A%2A%29&agg_m=count&agg_m_source=base&agg_t=count&clustering_pattern_field_path=message&cols=%40orgName%2C%40extOrderId%2Csku%2C%40error.status%2C%40internal.retry%2C%40error.details.message%2Cerror.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&view=spans&viz=stream&from_ts=1751442659352&to_ts=1751529059352&live=true"
+  },
+  {
+    "orgKey": "01 PS Test",
+    "connectorName": "connector-erp-som",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20env%3Amaster%20service%3Aconnector-erp-som%20-%40module%3A%28vendor-api%20OR%20p17-api%29%20-%28%40orgName%3A%2201%20PS%20Test%22%20AND%20%22shipping%3Amethods%3Alist%3Afailed%22%29%20&cols=%40orgName%2C%40extOrderId%2C%40sku%2C%40error.status%2C%40error.failure.code%2C%40error.parsed.message%2Cerror.message&fromUser=true&index=&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&view=spans&viz=stream&from_ts=1711707739015&to_ts=1711794139015&live=true"
+  },
+  {
+    "orgKey": "default-org",
+    "connectorName": "connector-erp-priority",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20functionname%3A%2Amaster%2A%20service%3Aconnector-erp-priority%20-%28%2Atimeout%20%2Amain%2A%29%20-%22Task%20timed%20out%22%20-%40module%3A%28p17-api%20OR%20vendor-api%29%20-integration%5C%3Ainit%2A%20-%40error.failure.shipments.errors%3A%22Empty%20lineItems%20is%20not%20allowed%22%20-%28%22orders%3Asubmit%3Acreate%3Afailed%22%20%22StatusCode%3D%5C%22Unknown%5C%22%2C%20Detail%3D%5C%22EOF%5C%22%22%20AND%20%40orgName%3AOrthofeet%29%20-%28%22fulfillment%3Apoll%3Aitem%3Aerror%22%20%22Duplicate%20key%20error%22%20AND%20%40orgName%3AOrthofeet%29%20-%22XThere%20are%20no%20open%20lines%20for%20part%22%20-%22fulfillment%3Apoll%3Aitem%3Askip%3Ano_lines%22%20-%28%22fulfillments%3Asubmit%3Afailed%22%20AND%20%22A%20record%20with%20the%20specified%20key%20already%20exists%22%29%20-%22shipments%3Apoll%3Aitem%3Afailed%3Abad_extOrderIdKey%22&agg_m=count&agg_m_source=base&agg_t=count&cols=%40orgName%2CextOrderId%2Csku%2C%40error.status%2C%40error.failure.code%2Cerror.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&view=spans&viz=stream&from_ts=1749326276671&to_ts=1749412676671&live=true"
+  },
+  {
+    "orgKey": "default-org",
+    "connectorName": "connector-3pl-bender",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20functionname%3A%2Amaster%2A%20service%3Aconnector-3pl-bender%20-%28%2Atimeout%20%2Amain%2A%29%20%40module%3A%2A%20-%40module%3A%28vendor-api%20OR%20p17-api%29%20-%40error.details.message%3A%22XThere%20was%20an%20error%20verifying%20your%20information%2C%20please%20check%20your%20clientid%20and%2For%20secret%22%20-%40error.details.message%3A%22%5C%22country%5C%22%20length%20must%20be%20less%20than%20or%20equal%20to%2010%20characters%20long%22%20-%40error.details.message%3A%22%5C%22line_one%5C%22%20is%20required%22%20-%28%40error.status%3A500%20AND%20%28%22shipments%3Aapply%3Afailed%22%20OR%20integration%2A%29%29%20-%22length%20must%20be%20less%20than%20or%20equal%20to%22%20-%28%22X404%20Not%20found%22%20AND%20%28%22shipments%3Aapply%3Afailed%22%20OR%20integration%2A%29%29%20-%22fulfillments%3Apoll%3Aitem%3Afulfill%3Adelayed%22&agg_m=count&agg_m_source=base&agg_t=count&clustering_pattern_field_path=message&cols=%40orgName%2C%40extOrderId%2C%40error.status%2C%40error.failure.code%2C%40error.details.message%2Cerror.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&view=spans&viz=stream&from_ts=1751110809153&to_ts=1751197209153&live=true"
+  },
+  {
+    "orgKey": "default-org",
+    "connectorName": "connector-3pl-jazzcentral",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20functionname%3A%2Amaster%2A%20service%3Aconnector-3pl-jazzcentral%20-%2Atimeout%20-%40module%3A%28p17-api%20OR%20vendor-api%29%20-integration%5C%3Ainit%2A%20-UNCOMMENT_ASAP%20-%28%40error.details.non_field_errors%3ABarcode%5C%20already%5C%20exists%2A%20OR%20%40error.details.error%3Avalue%5C%20is%5C%20required%2ASKU_BARCODE%2A%20OR%20%40error.details.item_code%3AItem%5C%20with%5C%20code%2Aalready%5C%20exists%20OR%20%40error.details.vendor_code%3A%22This%20field%20may%20not%20be%20blank.%22%29%20-%40error.details.extra%3A%2ACould%5C%20not%5C%20identify%5C%20SKU%5C%20code%2A%20-%40error.details%3AThe%5C%20following%5C%20SKU%5C%28s%5C%29%5C%20were%5C%20not%5C%20found%2A%20-%40error.details%3A%22Source%20not%20found%20by%20ID%20B2B%22&agg_m=count&agg_m_source=base&agg_t=count&clustering_pattern_field_path=message&cols=%40orgName%2C%40extOrderId%2C%40sku%2C%40error.status%2Cerror.details%2Cerror.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&view=spans&viz=stream&from_ts=1753861484494&to_ts=1753947884494&live=true"
+  },
+  {
+    "orgKey": "default-org",
+    "connectorName": "connector-3pl-trackstar",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20env%3Amaster%20service%3Aconnector-3pl-trackstar%20&agg_m=count&agg_m_source=base&agg_t=count&cols=%40orgName%2C%40extOrderId%2Csku%2C%40error.status%2C%40error.parsed.error%2Cerror.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&view=spans&viz=stream&from_ts=1714642311445&to_ts=1714728711445&live=true"
+  },
+  {
+    "orgKey": "default-org",
+    "connectorName": "connector-3pl-trackstar",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20env%3Amaster%20service%3Aconnector-3pl-trackstar&agg_m=count&agg_m_source=base&agg_t=count&cols=%40orgName%2C%40extOrderId%2Csku%2C%40error.status%2C%40error.parsed.error%2Cerror.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&view=spans&viz=stream&from_ts=1714642311445&to_ts=1714728711445&live=true"
+  },
+  {
+    "orgKey": "default-org",
+    "connectorName": "connector-edi-orderful-labels",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20env%3Amaster%20service%3Aconnector-edi-orderful-labels%20-%22Task%20timed%20out%22%20-%40module%3A%28vendor-api%20OR%20p17-api%29%20&agg_m=count&agg_m_source=base&agg_t=count&cols=%40orgName%2C%40extOrderId%2Csku%2C%40error.status%2C%40error.text%2C%40error.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&viz=stream&from_ts=1714982555682&to_ts=1715068955682&live=true"
+  },
+  {
+    "orgKey": "Trace Minerals - Sandbox",
+    "connectorName": "connector-3pl-logiwa-io",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20functionname%3A%2Amaster%2A%20service%3Aconnector-3pl-logiwa-io%20-%28%2Atimeout%20%2Amain%2A%29%20-%22Task%20timed%20out%22%20-%40module%3A%28vendor-api%20OR%20p17-api%29%20-integration%5C%3Ainit%2A%20-locations%2A%20-%40error.parsed.message%3A%28The%5C%20entered%5C%20product%5C%20barcode%5C%20is%5C%20already%5C%20in%5C%20use%2A%20OR%20%2AProduct.KitComponent.ComponentProduct.CannotBeEmpty%20OR%20Product%5C%20pack%5C%20type%5C%20can%27t%5C%20be%5C%20updated%2A%29%20-%28%40orgName%3ATekBrands%2A%20%28%2A%3ApackTypeLength%20OR%20%2A%3ApackTypeHeight%20OR%20%2A%3ApackTypeWeight%20OR%20%2A%3AuomRatio%20OR%20%2A%3A%2AUOMRatio%2A%29%29%20-%22products%3Aapply%3Abundle%3Aresolve%3Amissing%22%20-%28%40error.parsed.message%3A%22%22%20%28inventory%2A%20OR%20products%2A%20OR%20returns%2A%29%29%20-%40error.parsed.message%3A%22This%20product%20is%20not%20found%22%20-%40error.parsed.message%3A%22This%20product%20SKU%20already%20exists%22%20-%40error.parsed.message%3A%22Entered%20product%20is%20not%20correct.%22%20-%40error.parsed.message%3A%22Description%20must%20be%20shorter%20than%20500%20characters%22%20-%22There%20are%20no%20clients%20available%20matching%20to%20configuration%22%20-shipping%5C%3Amethods%2A%20-%22returns%3Aapply%3Aunresolved%22%20-%40sku%3A%22%22%20-%28%22inventory%3Apoll%3Afailed%22%20504%29%20-%40orgName%3A%22Trace%20Minerals%20-%20Sandbox%22%20-%28%22products%3Aapply%3Afailed%22%20%28unexpected_response%20OR%20%40error.parsed.message%3AConnection%5C%20refused%2A%29%29%20-%22http%3Arequest%22%20-%22vendor%3Amain%3Afailed%22%20-%28%22Too%20many%20requests%22%20integration%2A%29%20-%40error.failure.inventory.errors%3A%22committed%3A%20required%20field%20does%20not%20exist%22%20-%40error.parsed.message%3A%22This%20shipment%20order%20line%20not%20found%22&agg_m=count&agg_m_source=base&agg_t=count&clustering_pattern_field_path=message&cols=%40orgName%2C%40extOrderId%2Csku%2C%40error.status%2C%40error.parsed.message%2Cerror.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&viz=stream&from_ts=1754851028863&to_ts=1754937428863&live=true"
+  },
+  {
+    "orgKey": "default-org",
+    "connectorName": "connector-ecomm-selleractive",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20functionname%3A%2Amaster%2A%20service%3Aconnector-ecomm-selleractive%20-%28%2Atimeout%20%2Amain%2A%29%20-%22Task%20timed%20out%22%20-%40module%3A%28p17-api%20OR%20vendor-api%29%20-integration%5C%3Ainit%2A%20-%40orgName%3AT20221012&agg_m=count&agg_m_source=base&agg_t=count&clustering_pattern_field_path=message&cols=%40orgName%2C%40extOrderId%2C%40sku%2C%40error.status%2C%40error.error.status%2C%40error.failure.code%2C%40error.text%2C%40error.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&viz=stream&from_ts=1753815116702&to_ts=1753901516702&live=true"
+  },
+  {
+    "orgKey": "Mohawk Group",
+    "connectorName": "connector-ecomm-amazon-awd",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20env%3Amaster%20service%3Aconnector-ecomm-amazon-awd%20-%28%2Atimeout%20%2Amain%2A%29%20-%40module%3A%28p17-api%20OR%20vendor-api%29%20-integration%5C%3Ainit%2A%20-UNCOMMENT_ASAP%20-%28%22inventory%3Apoll%3Apage%3Afailed%22%20%22status%20code%20403%22%20%40orgName%3A%22Mohawk%20Group%22%29&agg_m=count&agg_m_source=base&agg_t=count&cols=%40orgName%2CextOrderId%2Csku%2Cerror%2Cerror.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&viz=stream&from_ts=1740383705080&to_ts=1740470105080&live=true"
+  },
+  {
+    "orgKey": "default-org",
+    "connectorName": "connector-erp-sfsc",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20env%3Amaster%20service%3Aconnector-erp-sfsc%20-%2Atimeout%20-%40module%3A%28p17-api%20OR%20vendor-api%29%20-integration%5C%3Ainit%2A%20-%22XProduct%20Description%3A%20data%20value%20too%20large%22&agg_m=count&agg_m_source=base&agg_t=count&cols=%40orgName%2C%40extOrderId%2Csku%2C%40error.status%2C%40error.failure.code%2C%40error.details%2Cerror.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&view=spans&viz=stream&from_ts=1730745652922&to_ts=1730832052922&live=true"
+  },
+  {
+    "orgKey": "Carro Retailer Sandbox",
+    "connectorName": "connector-erp-carro",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20functionname%3A%2Amaster%2A%20service%3Aconnector-erp-carro%20-%28%2Atimeout%20%2Amain%2A%29%20-%40module%3Avendor-api%20-%28%28%40error.parsed.errors.message%3A%22error%20decoding%20token%22%20OR%20%28%2Apoll%2A%20%2Afailed%20-%2Aitem%2A%29%29%20%40orgName%3A%22Carro%20Retailer%20Sandbox%22%29&agg_m=count&agg_m_source=base&agg_t=count&cols=%40orgName%2C%40extOrderId%2Csku%2C%40error.status%2C%40error.failure.code%2C%40error.parsed.message%2Cerror.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&viz=stream&from_ts=1749298891591&to_ts=1749385291591&live=true"
+  },
+  {
+    "orgKey": "default-org",
+    "connectorName": "connector-ecomm-acenda",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20env%3Amaster%20service%3Aconnector-ecomm-acenda%20-%28%2Atimeout%20%2Amain%2A%29%20-%40module%3A%28p17-api%20OR%20vendor-api%29%20-integration%5C%3Ainit%2A&agg_m=count&agg_m_source=base&agg_t=count&cols=%40orgName%2C%40extOrderId%2Csku%2Cerror.status%2C%40error.failure.code%2C%40error.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&viz=stream&from_ts=1736409198913&to_ts=1736495598913&live=true"
+  },
+  {
+    "orgKey": "default-org",
+    "connectorName": "connector-supplier-carro",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20env%3Amaster%20service%3Aconnector-supplier-carro%20-%22timed%20out%22%20-integration%5C%3Ainit%2A%20-%40module%3A%28vendor-api%20OR%20p17-api%29%20-%40error.errors%3A%22Product%20not%20found%22%20-%22Product%20not%20found%22&agg_m=count&agg_m_source=base&agg_t=count&cols=%40orgName%2C%40extOrderId%2C%40sku%2Cerror.errors%5B0%5D%2C%40error.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&viz=stream&from_ts=1725263846710&to_ts=1725350246710&live=true"
+  },
+  {
+    "orgKey": "default-org",
+    "connectorName": "connector-3pl-mintsoft",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20functionname%3A%2Amaster%2A%20service%3Aconnector-3pl-mintsoft%20-%28%2Atimeout%20%2Amain%2A%29%20-%40module%3A%28p17-api%20OR%20vendor-api%29%20-integration%5C%3Ainit%2A%20-locations%2A%20-%28token_expired%20integration%2A%29%20-%22Xproducts%3Asubmit%3Abundle%3Aitem%3A%3Avendor%3Afind_by_sky%3Afailed%22&agg_m=count&agg_m_source=base&agg_t=count&cols=%40orgName%2CextOrderId%2Csku%2C%40error.status%2Cerror.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&viz=stream&from_ts=1750503226257&to_ts=1750589626257&live=true"
+  },
+  {
+    "orgKey": "default-org",
+    "connectorName": "connector-ecomm-amazon-vc",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20env%3Amaster%20service%3Aconnector-ecomm-amazon-vc%20-%28%2Atimeout%20%2Amain%2A%29%20-%40module%3A%28p17-api%20OR%20vendor-api%29%20-integration%5C%3Ainit%2A&agg_m=count&agg_m_source=base&agg_t=count&cols=%40orgName%2C%40extOrderId%2Csku%2C%40error.status%2C%40error.failure.code%2C%40error.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&viz=stream&from_ts=1740399551372&to_ts=1740485951372&live=true"
+  },
+  {
+    "orgKey": "default-org",
+    "connectorName": "connector-upscapital",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20env%3Amaster%20service%3Aconnector-upscapital%20-%28%2Atimeout%20%2Amain%2A%29%20-%40module%3A%28vendor-api%20OR%20p17-api%29%20-integration%5C%3Ainit%2A&agg_m=count&agg_m_source=base&agg_t=count&cols=%40orgName%2C%40extOrderId%2Csku%2C%40error.status%2Cerror.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&view=spans&viz=stream&from_ts=1733816901571&to_ts=1733903301571&live=true"
+  },
+  {
+    "orgKey": "Wild Earth (New)",
+    "connectorName": "connector-3pl-fedex",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20functionname%3A%2Amaster%2A%20service%3Aconnector-3pl-fedex%20-%28%2Atimeout%20%2Amain%2A%29%20-%40module%3A%28vendor-api%20OR%20p17-api%29%20-integration%5C%3Ainit%2A%20-UNCOMMENT_THIS_ASAP%20-%28%28%40error.details.errors.description%3A%22Connection%20is%20inactive%22%20OR%20%40error.errors.description%3A%22Connection%20is%20inactive%22%29%20%40orgName%3A%22Wild%20Earth%20%28New%29%22%20%28%22inventory%3Apoll%3Afailed%22%20OR%20%22shipments%3Aapply%3Aupsert%3Afailed%22%29%29&agg_m=count&agg_m_source=base&agg_t=count&analyticsOptions=%5B%22bars%22%2C%22dog_classic%22%2Cnull%2Cnull%2C%22value%22%5D&clustering_pattern_field_path=message&cols=%40orgName%2C%40extOrderId%2C%40sku%2C%40error.status%2Cerror.errors%5B0%5D%2Cerror.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&view=spans&viz=stream&from_ts=1748331865270&to_ts=1748418265270&live=true"
+  },
+  {
+    "orgKey": "DfowlerTest",
+    "connectorName": "connector-ecomm-shopify-b2b",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20env%3Amaster%20service%3Aconnector-ecomm-shopify-b2b%20-%28%2Atimeout%20%2Amain%2A%29%20-%40module%3A%28p17-api%20OR%20vendor-api%29%20-integration%5C%3Ainit%2A%20-UNCOMMENT_ASAP%20-%28%40orgName%3A%22DfowlerTest%22%20AND%20%22Customer%20must%20have%20an%20email%20address.%22%29&agg_m=count&agg_m_source=base&agg_t=count&cols=%40orgName%2C%40extOrderId%2C%40sku%2C%40error.status%2C%40error.httpStatus%2C%40error.json%2Cerror.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&view=spans&viz=stream&from_ts=1741286820524&to_ts=1741373220524&live=true"
+  },
+  {
+    "orgKey": "default-org",
+    "connectorName": "connector-erp-fullcircle",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20functionname%3A%2Amaster%2A%20service%3Aconnector-erp-fullcircle%20-%28%2Atimeout%20%2Amain%2A%29%20-%40module%3A%28vendor-api%20OR%20p17-api%29%20-integration%5C%3Ainit%2A%20-%28%22Xcertificate%20has%20expired%22%20integration%2A%20%40orgName%3AOuterknown%29&agg_m=count&agg_m_source=base&agg_t=count&cols=%40orgName%2C%40extOrderId%2C%40sku%2C%40error.code%2Cerror.failure.code%2Cerror.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&view=spans&viz=stream&from_ts=1745912528835&to_ts=1745998928835&live=true"
+  },
+  {
+    "orgKey": "default-org",
+    "connectorName": "connector-3pl-osauc3",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20functionname%3A%2Amaster%2A%20service%3Aconnector-3pl-osauc3%20-%28%2Atimeout%20%2Amain%2A%29%20-%40module%3A%28vendor-api%20OR%20p17-api%29%20-integration%5C%3Ainit%2A%20-locations%2A%20-%40orgName%3AT20221012%20-%40error.details.Value%3A%22upc%20or%20mpn%20must%20be%20supplied%20when%20processing%20product%22%20-%28inventory%2A%20%28%22The%20request%20exceeded%20the%20configured%20timeout%22%20OR%20%22Unexpected%20Execution%20Error%22%20OR%20%40error.response.status%3A503%29%29%20-%40error.details.Key%3A%28emailvalidator%2A%20OR%20maximumlengthvalidator%2A%29%20-%28%40orgName%3AEIS-Inc%20%22shipments%3Aapply%3Achannels%3Aresolve%3Aempty%22%29%20-%40error.details.errors%3AOne%5C%20of%5C%20the%5C%20products%5C%20%2A%5C%20is%5C%20not%5C%20exists%2A%20-%40error.details.errors%3A%2AProduct%5C%20%2A%5C%20not%5C%20found%2A&agg_m=count&agg_m_source=base&agg_t=count&clustering_pattern_field_path=message&cols=%40orgName%2C%40extOrderId%2C%40sku%2C%40error.status%2Cerror.details.errors%5B0%5D%2Cerror.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&view=spans&viz=stream&from_ts=1754742986803&to_ts=1754829386803&live=true"
+  },
+  {
+    "orgKey": "default-org",
+    "connectorName": "connector-3pl-email-labels",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20env%3Amaster%20service%3Aconnector-3pl-email-labels%20-%2Atimeout%20-%40module%3A%28vendor-api%20OR%20p17-api%29%20-%40XorgName%3AT20221012&agg_m=count&agg_m_source=base&agg_t=count&cols=%40orgName%2C%40extOrderId%2Csku%2C%40error.failure.code%2C%40error.status%2Cerror.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&view=spans&viz=stream&from_ts=1729939301233&to_ts=1730025701233&live=true"
+  },
+  {
+    "orgKey": "default-org",
+    "connectorName": "connector-3pl-cbip",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20functionname%3A%2Amaster%2A%20service%3Aconnector-3pl-cbip%20-%28%2Atimeout%20%2Amain%2A%29%20-%40module%3A%28vendor-api%20OR%20p17-api%29%20-locations%2A%20-integration%5C%3Ainit%2A%20-%28%40error.status%3A%28404%20OR%20429%20OR%20500%20OR%20502%20OR%20503%20OR%20504%29%20AND%20%22fulfillments%3Apoll%3Aorder%3Aresolve%3Afailed%22%29%20-%40error.parsed.errors.billing_address%3A%2A&agg_m=count&agg_m_source=base&agg_t=count&clustering_pattern_field_path=message&cols=%40orgName%2C%40extOrderId%2Csku%2C%40error.status%2Cerror.parsed.errors%2Cerror.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&view=spans&viz=stream&from_ts=1750617761580&to_ts=1750704161580&live=true"
+  },
+  {
+    "orgKey": "Heyday.co",
+    "connectorName": "connector-3pl-amazon-inbound",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20functionname%3A%2Amaster%2A%20service%3Aconnector-3pl-amazon-inbound%20-%28%2Atimeout%20%2Amain%2A%29%20-%22Task%20timed%20out%22%20-%40module%3A%28vendor-api%20OR%20p17-api%29%20-integration%5C%3Ainit%2A%20-UNCOMMENT_THIS_ASAP%20-%28%22ERROR%3A%20Unable%20to%20parse%20the%20provided%20paginationToken.%22%20AND%20%22transfers%3Apoll%3Afailed%22%29%20-%28%22Not%20authorized%22%20AND%20%22receipts%3Apoll%3Aitem%3Astatus%3Afailed%22%29%20-%28%22transfers%3Apoll%3Afailed%22%20AND%20%22We%20encountered%20an%20internal%20error%22%29%20-%28%22XOperation%20GetShipment%20cannot%20be%20processed%22%20AND%20%22transfers%3Apoll%3Afailed%22%29%20-%40orgName%3A%22Heyday.co%22%20-%28%22transfers%3Apoll%3Alocation%3Anot_found%22%20%40orgName%3A%22PPD%20%28US%20UK%20EU%29%22%29&agg_m=count&agg_m_source=base&agg_t=count&clustering_pattern_field_path=message&cols=%40orgName%2C%40extOrderId%2Csku%2C%40error.status%2C%40error.failure.code%2Cerror.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&viz=stream&from_ts=1743408118561&to_ts=1743494518561&live=true"
+  },
+  {
+    "orgKey": "AT Cross (Magento)",
+    "connectorName": "connector-3pl-ftp-v2",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20functionname%3A%2Amaster%2A%20service%3Aconnector-3pl-ftp-v2%20-%28%2Atimeout%20%2Amain%2A%29%20-%22timed%20out%22%20-%40module%3A%28vendor-api%20OR%20p17-api%29%20-integration%5C%3Ainit%2A%20-%28%28integration%2A%20OR%20%22fulfillments%3Apoll%3Afailed%22%29%20AND%20%28%22Could%20not%20create%20socket%22%20OR%20%22connect-%3EgetConnection%22%29%29%20-%28%40orgName%3A%22AT%20Cross%20%28Magento%29%22%20%40error.code%3A450%29%20-%28%22Operation%20timeout%22%20%22paths%3Acheck%3Afailed%22%29%20-%22Xshipments%3Apoll%3Aitem%3Aresolve%3Afailed%3Afinal%22%20-%22Xfulfillments%3Apoll%3Aitem%3Aresolve%3Afailed%3Afinal%22%20-%28%22Xfulfillments%3Apoll%3Aitem%3Afailed%22%20%40error.failure.code%3A409%29&agg_m=count&agg_m_source=base&agg_t=count&clustering_pattern_field_path=message&cols=%40orgName%2C%40extOrderId%2Csku%2C%40error.status%2C%40error.failure.code%2Cerror.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&view=spans&viz=stream&from_ts=1753170161416&to_ts=1753256561416&live=true"
+  },
+  {
+    "orgKey": "default-org",
+    "connectorName": "connector-erp-circlify",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20functionname%3A%2Amaster%2A%20service%3Aconnector-erp-circlify%20-%28%2Atimeout%20%2Amain%2A%29%20-%22Task%20timed%20out%22%20-%40module%3A%28p17-api%20OR%20vendor-api%29%20-integration%5C%3Ainit%2A&agg_m=count&agg_m_source=base&agg_t=count&clustering_pattern_field_path=message&cols=%40orgName%2CextOrderId%2Csku%2C%40error.code%2C%40error.status%2Cerror.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&viz=stream&from_ts=1746471869421&to_ts=1746558269421&live=true"
+  },
+  {
+    "orgKey": "default-org",
+    "connectorName": "connector-ecomm-amazon-retail",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20env%3Amaster%20service%3Aconnector-ecomm-amazon-retail%20-%28%2Atimeout%20%2Amain%2A%29%20-%28%22Task%20timed%20out%22%29%20-%40module%3A%28vendor-api%20OR%20p17-api%29%20-integration%5C%3Ainit%2A&agg_m=count&agg_m_source=base&agg_t=count&cols=%40orgName%2C%40extOrderId%2Csku%2C%40error.status%2C%40error.details%2Cerror.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&viz=stream&from_ts=1736841135608&to_ts=1736927535608&live=true"
+  },
+  {
+    "orgKey": "default-org",
+    "connectorName": "connector-ecomm-temu",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20functionname%3A%2Amaster%2A%20service%3Aconnector-ecomm-temu%20-%2Atimeout%20-%40module%3A%28p17-api%20OR%20vendor-api%29%20-integration%5C%3Ainit%2A%20-%40orgName%3AT20241127%20-%28%22products%3Apoll%3Aitem%3Afailed%22%20%22Duplicate%20key%22%29%20-%40Xerror.errorMsg%3A%2APlease%5C%20migrate%5C%20to%5C%20the%5C%20higher%5C%20version%5C%20API%2A&agg_m=count&agg_m_source=base&agg_t=count&clustering_pattern_field_path=message&cols=%40orgName%2C%40extOrderId%2Csku%2C%40error.status%2C%40error.errorCode%2C%40error.errorMsg%2Cerror.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&view=spans&viz=stream&from_ts=1751790862898&to_ts=1751877262898&live=true"
+  },
+  {
+    "orgKey": "default-org",
+    "connectorName": "connector-ecomm-shopify-fs",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20env%3Amaster%20service%3Aconnector-ecomm-shopify-fs%20-%2Atimeout%20-%40module%3A%28p17-api%20OR%20vendor-api%29%20-integration%5C%3Ainit%2A&agg_m=count&agg_m_source=base&agg_t=count&cols=%40orgName%2C%40extOrderId%2C%40sku%2C%40error.status%2C%40error.httpStatus%2C%40error.json%2Cerror.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&view=spans&viz=stream&from_ts=1739171506460&to_ts=1739210386460&live=true"
+  },
+  {
+    "orgKey": "default-org",
+    "connectorName": "connector-3pl-fedex-supply-chain",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20functionname%3A%2Amaster%2A%20service%3Aconnector-3pl-fedex-supply-chain%20-%28%2Atimeout%20%2Amain%2A%29%20-integration%5C%3Ainit%2A%20-%40module%3A%28vendor-api%20OR%20p17-api%29%20-%28%22arrivals%3Aapply%3Aresolve%3Afailed%22%20%40error.status%3A405%29%20-%40error.payload.errors.exceptionResponse.description%3A%22Item%20Name%20is%20duplicate.%22&agg_m=count&agg_m_source=base&agg_t=count&clustering_pattern_field_path=message&cols=%40orgName%2C%40extOrderId%2C%40shipment.dsgShipVia%2C%40sku%2C%40error.status%2C%40error.payload.errors.errorMessage%2Cerror.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&view=spans&viz=stream&from_ts=1754132411394&to_ts=1754218811394&live=true"
+  },
+  {
+    "orgKey": "default-org",
+    "connectorName": "connector-erp-netsuite-b2b",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20functionname%3A%2Amaster%2A%20service%3Aconnector-erp-netsuite-b2b%20-%2Atimeout%20-%22Task%20timed%20out%22%20-%40module%3A%28p17-api%20OR%20vendor-api%29%20-integration%5C%3Ainit%2A%20-%22reportAction%20is%20not%20a%20function%22&agg_m=count&agg_m_source=base&agg_t=count&cols=%40orgName%2C%40extOrderId%2Csku%2Cerror%2Cerror.message&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&view=spans&viz=stream&from_ts=1755517370998&to_ts=1755690170998&live=true"
+  },
+  {
+    "orgKey": "default-org",
+    "connectorName": "connector-ecomm-shein",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20env%3Amaster%20service%3Aconnector-ecomm-shein%20-%2Atimeout%20-%40module%3A%28p17-api%20OR%20vendor-api%29%20-integration%5C%3Ainit%2A&agg_m=count&agg_m_source=base&agg_t=count&cols=%40orgName%2C%40extOrderId%2Csku%2Cerror%2Cerror.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&view=spans&viz=stream&from_ts=1739778455075&to_ts=1739864855075&live=true"
+  },
+  {
+    "orgKey": "default-org",
+    "connectorName": "connector-ecomm-ftp-v2",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20functionname%3A%2Amaster%2A%20service%3Aconnector-ecomm-ftp-v2%20-%28%2Atimeout%20%2Amain%2A%29%20-%28%2Atimeout%20%2A%5C%3A%2Amain%2A%29%20-%22timed%20out%22%20-%40module%3A%28vendor-api%20OR%20p17-api%29%20-integration%5C%3Ainit%2A%20-%28%22Xconnect-%3EgetConnection%22%20%28integration%2A%20OR%20events%2A%29%29%20-%40error.willRetry%3Atrue&agg_m=count&agg_m_source=base&agg_t=count&clustering_pattern_field_path=message&cols=%40orgName%2C%40extOrderId%2Csku%2C%40error.status%2C%40error.failure.code%2Cerror.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&view=spans&viz=stream&from_ts=1749581351176&to_ts=1749667751176&live=true"
+  },
+  {
+    "orgKey": "default-org",
+    "connectorName": "connector-3pl-manhattan",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20functionname%3A%2Amaster%2A%20service%3Aconnector-3pl-manhattan%20-%28%2Atimeout%20%2Amain%2A%29%20-%40module%3A%28p17-api%20OR%20vendor-api%29%20-integration%5C%3Ainit%2A%20-%40XorgName%3AT20241127&agg_m=count&agg_m_source=base&agg_t=count&clustering_pattern_field_path=message&cols=%40orgName%2C%40extOrderId%2C%40sku%2C%40error.status%2C%40error.failure.code%2Cerror.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&view=spans&viz=stream&from_ts=1743244867530&to_ts=1743331267530&live=true"
+  },
+  {
+    "orgKey": "Brandon Blackwood NY",
+    "connectorName": "connector-3pl-rom",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20functionname%3A%2Amaster%2A%20service%3Aconnector-3pl-rom%20-%28%2Atimeout%20%2Amain%2A%29%20-%22Task%20timed%20out%22%20-integration%5C%3Ainit%2A%20-%40module%3A%28vendor-api%20OR%20p17-api%29%20-%28%40orgName%3A%22Brandon%20Blackwood%20NY%22%20%28%22fulfillments%3Apoll%3Aitem%3Afailed%22%20OR%20%22fulfillments%3Apoll%3Aitem%3Aexists%22%29%29&agg_m=count&agg_m_source=base&agg_t=count&clustering_pattern_field_path=message&cols=%40orgName%2C%40extOrderId%2C%40sku%2C%40error.status%2Cerror.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&view=spans&viz=stream&from_ts=1749627993098&to_ts=1749714393098&live=true"
+  },
+  {
+    "orgKey": "Marriott Sandbox",
+    "connectorName": "connector-ecomm-logicbroker",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20functionname%3A%2Amaster%2A%20service%3Aconnector-ecomm-logicbroker%20-%28%2Atimeout%20%2Amain%2A%29%20-%40module%3A%28p17-api%20OR%20vendor-api%29%20-integration%5C%3Ainit%2A%20-%28%22Duplicate%20key%20error%22%20products%2A%29%20-UNCOMMENT_ASAP%20-%28%40error.failure.products.errors%3Aprices%5C%5B0%5C%5D.value%2A%20%40orgName%3A%22Marriott%20Sandbox%22%29&agg_m=count&agg_m_source=base&agg_t=count&clustering_pattern_field_path=message&cols=%40orgName%2C%40extOrderId%2C%40sku%2C%40error.status%2C%40error.failure.code%2Cerror.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&view=spans&viz=stream&from_ts=1750503353450&to_ts=1750589753450&live=true"
+  },
+  {
+    "orgKey": "default-org",
+    "connectorName": "connector-3pl-mabang",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20functionname%3A%2Amaster%2A%20service%3Aconnector-3pl-mabang%20-%28%2Atimeout%20%2Amain%2A%29%20-integration%5C%3Ainit%2A%20-%40module%3A%28vendor-api%20OR%20p17-api%29%20-%22locations%3Apoll%3Afailed%22%20-%22locations%3Apoll%3Afailed%3Ano%3AwarehouseId%22%20-%28%22inventory%3Apoll%3Afailed%22%20%22Too%20many%20attempts%22%29&agg_m=count&agg_m_source=base&agg_t=count&clustering_pattern_field_path=message&cols=%40orgName%2C%40extOrderId%2C%40sku%2C%40error.status%2C%40error.failure.code%2Cerror.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&view=spans&viz=stream&from_ts=1751714839062&to_ts=1751801239062&live=true"
+  },
+  {
+    "orgKey": "default-org",
+    "connectorName": "connector-schema-sanity-check",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20functionname%3A%2Amaster%2A%20service%3Aconnector-schema-sanity-check%20-%22connectors%3Alist%3Afailed%22%20-%22events%3Alist%3Afailed%22%20-%22schemaCheck%3Aconnector%3Afailed%22%20-%22XschemaCheck%3Aentity%3Avalidation%3Afailed%22%20-%22XschemaCheck%3Aentity%3Aoutbound%3Afailed%22&agg_m=count&agg_m_source=base&agg_t=count&clustering_pattern_field_path=message&cols=%40orgName%2C%40extOrderId%2Csku%2C%40error.status%2Cerror.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&viz=stream&from_ts=1749640264058&to_ts=1749726664058&live=true"
+  },
+  {
+    "orgKey": "default-org",
+    "connectorName": "connector-erp-skubana",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20functionname%3A%2Amaster%2A%20service%3Aconnector-erp-skubana%20-%28%2Atimeout%20%2Amain%2A%29%20-%22Task%20timed%20out%22%20-%40module%3A%28vendor-api%20OR%20p17-api%29%20-integration%5C%3Ainit%2A&agg_m=count&agg_m_source=base&agg_t=count&analyticsOptions=%5B%22bars%22%2C%22dog_classic%22%2Cnull%2Cnull%2C%22value%22%5D&clustering_pattern_field_path=message&cols=%40orgName%2C%40extOrderId%2C%40sku%2C%40error.status%2Cerror.errors%5B0%5D%2Cerror.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&view=spans&viz=stream&from_ts=1751528853297&to_ts=1751615253297&live=true"
+  },
+  {
+    "orgKey": "default-org",
+    "connectorName": "connector-3pl-pitneybowes",
+    "link": "https://app.datadoghq.com/logs?query=status%3Aerror%20functionname%3A%2Amaster%2A%20service%3Aconnector-3pl-pitneybowes%20-%28%2Amain%2A%20%2Atimeout%29%20-%40module%3A%28p17-api%20OR%20vendor-api%29%20-integration%5C%3Ainit%2A&agg_m=count&agg_m_source=base&agg_t=count&clustering_pattern_field_path=message&cols=%40orgName%2C%40extOrderId%2Csku%2Cerror.code%2Cerror.status%2C%40error.failure.code%2Cerror.message&fromUser=true&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=time%2Cdesc&view=spans&viz=stream&from_ts=1752779699109&to_ts=1752866099109&live=true"
+  }
+]
