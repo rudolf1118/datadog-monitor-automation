@@ -18,7 +18,7 @@ export class LogProcessor {
     const summary = {
       totalErrors: 0,
       byOrg: {},
-      byIntegration: {},
+      byConnector: {},
       byStatus: {},
       processedLinks: 0,
       failedLinks: 0
@@ -42,7 +42,7 @@ export class LogProcessor {
           
           summary.byOrg[result.orgKey] = (summary.byOrg[result.orgKey] || 0) + result.logs.length;
           
-          summary.byIntegration[result.connectorName] = (summary.byIntegration[result.connectorName] || 0) + result.logs.length;
+          summary.byConnector[result.connectorName] = (summary.byConnector[result.connectorName] || 0) + result.logs.length;
           
          
           result.logs.forEach(log => {
