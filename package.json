@@ -1,0 +1,14 @@
+{
+    "name": "datadog-monitor-automation",
+    "version": "0.1.0",
+    "type": "module",
+    "dependencies": {
+        "@datadog/datadog-api-client": "^1.26.0",
+        "dotenv": "^16.4.5",
+        "express": "^4.19.2"
+    },
+    "scripts": {
+        "start": "node src/index.js",
+        "dev": "node --watch src/index.js"
+    }
+}
